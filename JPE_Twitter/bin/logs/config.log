@@ -1,0 +1,60 @@
+Jan 26 00:55:46 /opt/splunk/etc/apps/JPE_Twitter/bin/config.pyc INFO [1495]: Cargando archivo de configuración
+Jan 26 00:55:46 /opt/splunk/etc/apps/JPE_Twitter/bin/config.pyc INFO [1495]: Verificando el archivo de configuración
+Jan 26 00:55:46 /opt/splunk/etc/apps/JPE_Twitter/bin/config.pyc INFO [1495]: Verificación Exitosa!
+Jan 26 00:55:46 /opt/splunk/etc/apps/JPE_Twitter/bin/config.pyc ERROR [1495]: 'NoneType' object has no attribute '__getitem__'
+Jan 26 00:56:19 /opt/splunk/etc/apps/JPE_Twitter/bin/config.pyc INFO [1498]: Cargando archivo de configuración
+Jan 26 00:56:19 /opt/splunk/etc/apps/JPE_Twitter/bin/config.pyc INFO [1498]: Verificando el archivo de configuración
+Jan 26 00:56:19 /opt/splunk/etc/apps/JPE_Twitter/bin/config.pyc INFO [1498]: Verificación Exitosa!
+Jan 26 00:56:19 /opt/splunk/etc/apps/JPE_Twitter/bin/config.pyc INFO [1498]: Conexión con Twitter API
+Jan 26 00:56:19 /opt/splunk/etc/apps/JPE_Twitter/bin/config.pyc INFO [1498]: Starting new HTTPS connection (1): api.twitter.com
+Jan 26 00:56:19 /opt/splunk/etc/apps/JPE_Twitter/bin/config.pyc ERROR [1498]: Error al conectar con Twitter, verificar las credenciales.
+Jan 26 00:56:19 /opt/splunk/etc/apps/JPE_Twitter/bin/config.pyc INFO [1498]: Starting new HTTPS connection (1): stream.twitter.com
+Jan 26 00:56:19 /opt/splunk/etc/apps/JPE_Twitter/bin/config.pyc ERROR [1498]: HTTPSConnectionPool(host='stream.twitter.com', port=443): Max retries exceeded with url: /1.1/statuses/filter.json?delimited=length (Caused by <class 'socket.gaierror'>: [Errno -3] Temporary failure in name resolution)
+Jan 26 00:57:34 /opt/splunk/etc/apps/JPE_Twitter/bin/config.pyc INFO [1503]: Cargando archivo de configuración
+Jan 26 00:57:34 /opt/splunk/etc/apps/JPE_Twitter/bin/config.pyc INFO [1503]: Verificando el archivo de configuración
+Jan 26 00:57:34 /opt/splunk/etc/apps/JPE_Twitter/bin/config.pyc INFO [1503]: Verificación Exitosa!
+Jan 26 00:57:34 /opt/splunk/etc/apps/JPE_Twitter/bin/config.pyc INFO [1503]: Conexión con Twitter API
+Jan 26 00:57:34 /opt/splunk/etc/apps/JPE_Twitter/bin/config.pyc INFO [1503]: Starting new HTTPS connection (1): api.twitter.com
+Jan 26 00:57:34 /opt/splunk/etc/apps/JPE_Twitter/bin/config.pyc ERROR [1503]: Error al conectar con Twitter, verificar las credenciales.
+Jan 26 00:57:34 /opt/splunk/etc/apps/JPE_Twitter/bin/config.pyc INFO [1503]: Starting new HTTPS connection (1): stream.twitter.com
+Jan 26 00:57:34 /opt/splunk/etc/apps/JPE_Twitter/bin/config.pyc ERROR [1503]: HTTPSConnectionPool(host='stream.twitter.com', port=443): Max retries exceeded with url: /1.1/statuses/filter.json?delimited=length (Caused by <class 'socket.gaierror'>: [Errno -3] Temporary failure in name resolution)
+Jan 26 01:04:41 /opt/splunk/etc/apps/JPE_Twitter/bin/config.pyc INFO [1540]: Cargando archivo de configuración
+Jan 26 01:04:41 /opt/splunk/etc/apps/JPE_Twitter/bin/config.pyc INFO [1540]: Verificando el archivo de configuración
+Jan 26 01:04:41 /opt/splunk/etc/apps/JPE_Twitter/bin/config.pyc INFO [1540]: Verificación Exitosa!
+Jan 26 01:04:41 /opt/splunk/etc/apps/JPE_Twitter/bin/config.pyc INFO [1540]: Conexión con Twitter API
+Jan 26 01:04:41 /opt/splunk/etc/apps/JPE_Twitter/bin/config.pyc INFO [1540]: Starting new HTTPS connection (1): api.twitter.com
+Jan 26 01:04:41 /opt/splunk/etc/apps/JPE_Twitter/bin/config.pyc ERROR [1540]: Error al conectar con Twitter, verificar las credenciales.
+Jan 26 01:04:41 /opt/splunk/etc/apps/JPE_Twitter/bin/config.pyc INFO [1540]: Starting new HTTPS connection (1): stream.twitter.com
+Jan 26 01:04:41 /opt/splunk/etc/apps/JPE_Twitter/bin/config.pyc ERROR [1540]: HTTPSConnectionPool(host='stream.twitter.com', port=443): Max retries exceeded with url: /1.1/statuses/filter.json?delimited=length (Caused by <class 'socket.gaierror'>: [Errno -3] Temporary failure in name resolution)
+Jan 26 01:04:47 /opt/splunk/etc/apps/JPE_Twitter/bin/config.pyc INFO [1543]: Cargando archivo de configuración
+Jan 26 01:04:47 /opt/splunk/etc/apps/JPE_Twitter/bin/config.pyc INFO [1543]: Verificando el archivo de configuración
+Jan 26 01:04:47 /opt/splunk/etc/apps/JPE_Twitter/bin/config.pyc INFO [1543]: Verificación Exitosa!
+Jan 26 01:04:47 /opt/splunk/etc/apps/JPE_Twitter/bin/config.pyc INFO [1543]: Conexión con Twitter API
+Jan 26 01:04:47 /opt/splunk/etc/apps/JPE_Twitter/bin/config.pyc INFO [1543]: Starting new HTTPS connection (1): api.twitter.com
+Jan 26 01:04:47 /opt/splunk/etc/apps/JPE_Twitter/bin/config.pyc ERROR [1543]: Error al conectar con Twitter, verificar las credenciales.
+Jan 26 01:04:47 /opt/splunk/etc/apps/JPE_Twitter/bin/config.pyc INFO [1543]: Starting new HTTPS connection (1): stream.twitter.com
+Jan 26 01:04:47 /opt/splunk/etc/apps/JPE_Twitter/bin/config.pyc ERROR [1543]: HTTPSConnectionPool(host='stream.twitter.com', port=443): Max retries exceeded with url: /1.1/statuses/filter.json?delimited=length (Caused by <class 'socket.gaierror'>: [Errno -3] Temporary failure in name resolution)
+Jan 26 01:04:59 /opt/splunk/etc/apps/JPE_Twitter/bin/config.pyc INFO [1546]: Cargando archivo de configuración
+Jan 26 01:04:59 /opt/splunk/etc/apps/JPE_Twitter/bin/config.pyc INFO [1546]: Verificando el archivo de configuración
+Jan 26 01:04:59 /opt/splunk/etc/apps/JPE_Twitter/bin/config.pyc INFO [1546]: Verificación Exitosa!
+Jan 26 01:04:59 /opt/splunk/etc/apps/JPE_Twitter/bin/config.pyc INFO [1546]: Conexión con Twitter API
+Jan 26 01:04:59 /opt/splunk/etc/apps/JPE_Twitter/bin/config.pyc INFO [1546]: Starting new HTTPS connection (1): api.twitter.com
+Jan 26 01:04:59 /opt/splunk/etc/apps/JPE_Twitter/bin/config.pyc ERROR [1546]: Error al conectar con Twitter, verificar las credenciales.
+Jan 26 01:04:59 /opt/splunk/etc/apps/JPE_Twitter/bin/config.pyc INFO [1546]: Starting new HTTPS connection (1): stream.twitter.com
+Jan 26 01:04:59 /opt/splunk/etc/apps/JPE_Twitter/bin/config.pyc ERROR [1546]: HTTPSConnectionPool(host='stream.twitter.com', port=443): Max retries exceeded with url: /1.1/statuses/filter.json?delimited=length (Caused by <class 'socket.gaierror'>: [Errno -3] Temporary failure in name resolution)
+Jan 26 01:05:00 /opt/splunk/etc/apps/JPE_Twitter/bin/config.pyc INFO [1549]: Cargando archivo de configuración
+Jan 26 01:05:00 /opt/splunk/etc/apps/JPE_Twitter/bin/config.pyc INFO [1549]: Verificando el archivo de configuración
+Jan 26 01:05:00 /opt/splunk/etc/apps/JPE_Twitter/bin/config.pyc INFO [1549]: Verificación Exitosa!
+Jan 26 01:05:00 /opt/splunk/etc/apps/JPE_Twitter/bin/config.pyc INFO [1549]: Conexión con Twitter API
+Jan 26 01:05:00 /opt/splunk/etc/apps/JPE_Twitter/bin/config.pyc INFO [1549]: Starting new HTTPS connection (1): api.twitter.com
+Jan 26 01:05:00 /opt/splunk/etc/apps/JPE_Twitter/bin/config.pyc ERROR [1549]: Error al conectar con Twitter, verificar las credenciales.
+Jan 26 01:05:00 /opt/splunk/etc/apps/JPE_Twitter/bin/config.pyc INFO [1549]: Starting new HTTPS connection (1): stream.twitter.com
+Jan 26 01:05:00 /opt/splunk/etc/apps/JPE_Twitter/bin/config.pyc ERROR [1549]: HTTPSConnectionPool(host='stream.twitter.com', port=443): Max retries exceeded with url: /1.1/statuses/filter.json?delimited=length (Caused by <class 'socket.gaierror'>: [Errno -3] Temporary failure in name resolution)
+Jan 26 01:05:01 /opt/splunk/etc/apps/JPE_Twitter/bin/config.pyc INFO [1552]: Cargando archivo de configuración
+Jan 26 01:05:01 /opt/splunk/etc/apps/JPE_Twitter/bin/config.pyc INFO [1552]: Verificando el archivo de configuración
+Jan 26 01:05:01 /opt/splunk/etc/apps/JPE_Twitter/bin/config.pyc INFO [1552]: Verificación Exitosa!
+Jan 26 01:05:01 /opt/splunk/etc/apps/JPE_Twitter/bin/config.pyc INFO [1552]: Conexión con Twitter API
+Jan 26 01:05:01 /opt/splunk/etc/apps/JPE_Twitter/bin/config.pyc INFO [1552]: Starting new HTTPS connection (1): api.twitter.com
+Jan 26 01:05:01 /opt/splunk/etc/apps/JPE_Twitter/bin/config.pyc ERROR [1552]: Error al conectar con Twitter, verificar las credenciales.
+Jan 26 01:05:01 /opt/splunk/etc/apps/JPE_Twitter/bin/config.pyc INFO [1552]: Starting new HTTPS connection (1): stream.twitter.com
+Jan 26 01:05:01 /opt/splunk/etc/apps/JPE_Twitter/bin/config.pyc ERROR [1552]: HTTPSConnectionPool(host='stream.twitter.com', port=443): Max retries exceeded with url: /1.1/statuses/filter.json?delimited=length (Caused by <class 'socket.gaierror'>: [Errno -3] Temporary failure in name resolution)

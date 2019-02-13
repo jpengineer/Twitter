@@ -1,0 +1,55 @@
+[app/ui]
+version = 7.2.1
+modtime = 1543099444.106182000
+
+[app/launcher]
+version = 7.2.1
+modtime = 1543099444.109152000
+
+[indexes/twitter]
+owner = admin
+version = 7.2.1
+modtime = 1543101387.227791000
+
+[props/twitter]
+owner = admin
+version = 7.2.1
+modtime = 1543101043.500062000
+
+[views/twitter_hashtag]
+owner = admin
+version = 7.2.1
+modtime = 1544984836.964478000
+
+[inputs/monitor%3A%2F%2F%2Fopt%2Fsplunk%2Fetc%2Fapps%2FJPE_Twitter%2Fbin%2Flogs%2Ftwitter.log]
+owner = admin
+version = 7.2.1
+modtime = 1547831536.388523000
+
+[views/twitter_user]
+export = none
+owner = admin
+version = 7.2.1
+modtime = 1545092112.189544000
+
+[transforms/language_code]
+export = none
+owner = admin
+version = 7.2.1
+modtime = 1545093117.895431000
+
+[lookups/language_code]
+export = none
+owner = admin
+version = 7.2.1
+modtime = 1545093132.616324000
+
+[views/twitter_comments]
+owner = admin
+version = 7.2.1
+modtime = 1546126309.495174000
+
+[inputs/script%3A%2F%2F%24SPLUNK_HOME%2Fetc%2Fapps%2FJPE_Twitter%2Fbin%2Ftwitter.py]
+owner = admin
+version = 7.2.1
+modtime = 1547602690.008754000
