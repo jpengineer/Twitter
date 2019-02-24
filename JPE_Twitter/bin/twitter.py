@@ -14,8 +14,6 @@
 
 import os
 import sys
-sys.path.append('/opt/splunk/etc/apps/JPE_Twitter/bin/packages/')
-
 import config
 import security
 from tweepy import OAuthHandler
@@ -25,6 +23,8 @@ import json
 from tweepy import StreamListener
 from tweepy import TweepError
 from tweepy import Stream
+
+sys.path.append('/opt/splunk/etc/apps/JPE_Twitter/bin/packages/')
 
 
 class Listener(StreamListener):
@@ -65,18 +65,16 @@ class Listener(StreamListener):
     # def on_error(self, data):
     #     log.error(data)
 
+# Define the log path
+path = '/opt/splunk/etc/apps/JPE_Twitter/bin/logs/'
+log_file = os.path.splitext(os.path.basename(__file__))[0] + '.log'
 
+# Load Initial Configurations
+conf_file = config.InitialConfig()
+config_log = config.Log(path + log_file, __file__)
+file = conf_file.config()
+log = config_log.log_setup(5)
 try:
-    # Define the log path
-    path = '/opt/splunk/etc/apps/JPE_Twitter/bin/logs/'
-    log_file = os.path.splitext(os.path.basename(__file__))[0] + '.log'
-
-    # Load Initial Configurations
-    conf_file = config.InitialConfig()
-    config_log = config.Log(path + log_file, __file__)
-    file = conf_file.config()
-    log = config_log.log_setup(5)
-
     # Load AESCipher
     try:
         cipher = security.AESCipher(file['KEY'].decode('utf-8'))

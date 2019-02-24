@@ -1,0 +1,18 @@
+<form theme="dark">
+  <label>Configurations</label>
+  <description>Basic Configurations to Twitter App</description>
+  <fieldset submitButton="false" autoRun="false">
+    <input type="text" token="ACCESS_TOKEN">
+      <label>ACCESS_TOKEN</label>
+    </input>
+    <input type="text" token="ACCESS_SECRET">
+      <label>ACCESS_SECRET</label>
+    </input>
+    <input type="text" token="CONSUMER_KEY">
+      <label>CONSUMER_KEY</label>
+    </input>
+    <input type="text" token="CONSUMER_SECRET">
+      <label>CONSUMER_SECRET</label>
+    </input>
+  </fieldset>
+</form>

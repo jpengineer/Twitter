@@ -15,12 +15,12 @@
 
 import os
 import sys
-sys.path.append('/opt/splunk/etc/apps/JPE_Twitter/bin/packages')
-
 import json
 import base64
 import hashlib
 from Crypto.Cipher import AES
+
+sys.path.append('/opt/splunk/etc/apps/JPE_Twitter/bin/packages')
 
 class AESCipher(object):
 

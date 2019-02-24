@@ -4,7 +4,7 @@
   "CONSUMER_KEY": "VG4vd3Z3MFg3Q21XN1E9Pa4M5E3sWJpcT3GYPi0YaYuRZIhjNKJRjb3YNAxNqvpI",
   "CONSUMER_SECRET": "VG4vd3Z3MFg3Q21XN1E9PSDBUQMBYtbZZroufP7ri88Xg/O4CTo9Hzp7O9jFJLGPwOpON2VKgTkj4iybAFsGzzBaJuK1vVOGiwfabj7qfoQ=",
   "TYPE": "listener",
-  "FILTER": "CNN",
+  "FILTER": "CNN,festival,tvn,t13,mega,chv",
   "USERS_TARGET": "none",
   "NUM_TWEETS": "10",
   "ENCRYPT": "false",
