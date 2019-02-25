@@ -1,15 +1,4 @@
-Feb 24 17:13:29 /opt/splunk/etc/apps/JPE_Twitter/bin/service.py INFO [5965]: Service Status: The twitter service isn't started
-Feb 24 17:13:29 /opt/splunk/etc/apps/JPE_Twitter/bin/service.py INFO [5965]: The twitter service is started - PID 5974
+Feb 24 22:24:43 /opt/splunk/etc/apps/JPE_Twitter/bin/service.py INFO [5724]: Start Service: The twitter service is started - PID 5732
 
-Feb 24 17:13:40 /opt/splunk/etc/apps/JPE_Twitter/bin/service.py INFO [5990]: Service Status: The twitter service is started - PID ['5974\n']
-Feb 24 17:13:40 /opt/splunk/etc/apps/JPE_Twitter/bin/service.py INFO [5990]: The service could not be started because it already exists - PID 5974
-
-Feb 24 17:13:47 /opt/splunk/etc/apps/JPE_Twitter/bin/service.py INFO [6010]: Service Status: The twitter service is started - PID ['5974\n']
-Feb 24 17:13:47 /opt/splunk/etc/apps/JPE_Twitter/bin/service.py INFO [6010]: The service could not be started because it already exists - PID 5974
-
-Feb 24 17:14:07 /opt/splunk/etc/apps/JPE_Twitter/bin/service.py INFO [6045]: Service Status: The twitter service is started - PID ['5974\n']
-Feb 24 17:14:07 /opt/splunk/etc/apps/JPE_Twitter/bin/service.py INFO [6045]: The service could not be started because it already exists - PID 5974
-
-Feb 24 17:14:55 /opt/splunk/etc/apps/JPE_Twitter/bin/service.py INFO [6106]: Service Status: The twitter service is started - PID ['5974\n']
-Feb 24 17:17:28 /opt/splunk/etc/apps/JPE_Twitter/bin/service.py INFO [6258]: Service Status: The twitter service is started - PID 5974
-
+Feb 24 22:28:44 /opt/splunk/etc/apps/JPE_Twitter/bin/service.py ERROR [5928]: ("global name 'pid' is not defined",)
+Feb 24 22:28:59 /opt/splunk/etc/apps/JPE_Twitter/bin/service.py INFO [5949]: Stop Service: The service was successfully stopped
