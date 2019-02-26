@@ -14,8 +14,6 @@
 
 import os
 import sys
-sys.path.append('/opt/splunk/etc/apps/JPE_Twitter/bin/packages')
-
 import security
 import json
 import collections
@@ -23,32 +21,24 @@ import logging
 import logging.handlers
 import time
 
+sys.path.append('/opt/splunk/etc/apps/JPE_Twitter/bin/packages')
 
 class InitialConfig(object):
 
     def config(self):
-        # Define the logs path
-        path = '/opt/splunk/etc/apps/JPE_Twitter/bin/logs/'
-        log_file = os.path.splitext(os.path.basename(__file__))[0] + '.log'
-        config_log = Log(path + log_file, __file__)
-        log = config_log.log_setup()
-
         try:
             # Define name of config file
             path = os.path.splitext(__file__)[0] + '.json'
             # Instantiate VerifyConfig class
             config = security.VerifyConfig(path)
             # Load the config file
-            log.info("Cargando archivo de configuración")
             file = json.loads(open(path).read(), object_pairs_hook=collections.OrderedDict)
             # Security verify
-            log.info("Verificando el archivo de configuración")
             self.config_file = config.loadConfig(file)
-            log.info("Verificación Exitosa!")
         except Exception as error:
-            log.error("Error al Cargar la Configuración Inicial")
-            log.error(error)
+            exit(1)
         return self.config_file
+
 
 class Log(object):
 

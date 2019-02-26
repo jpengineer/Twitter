@@ -1,4 +1,3 @@
-Feb 24 22:24:43 /opt/splunk/etc/apps/JPE_Twitter/bin/service.py INFO [5724]: Start Service: The twitter service is started - PID 5732
-
-Feb 24 22:28:44 /opt/splunk/etc/apps/JPE_Twitter/bin/service.py ERROR [5928]: ("global name 'pid' is not defined",)
-Feb 24 22:28:59 /opt/splunk/etc/apps/JPE_Twitter/bin/service.py INFO [5949]: Stop Service: The service was successfully stopped
+Feb 26 00:43:19 /opt/splunk/etc/apps/JPE_Twitter/bin/service.py INFO [11362]: Stop Service: The twitter service isn't started
+Feb 26 00:43:59 /opt/splunk/etc/apps/JPE_Twitter/bin/service.py INFO [11929]: Start Service: The twitter service is started - PID 11941
+Feb 26 00:48:49 /opt/splunk/etc/apps/JPE_Twitter/bin/service.py INFO [15375]: Stop Service: The service was successfully stopped
