@@ -17,7 +17,7 @@
 | eval  user_mentions_name= if(isnull('user_mentions_name'),"-","@".user_mentions_name)
 
 
-| stats count by user_mentions_name | where user_mentions_name != "-"</query>
+| stats count by user_mentions_name | where user_mentions_name != "-" | sort -count useother=f limit=20</query>
           <earliest>@d</earliest>
           <latest>now</latest>
           <sampleRatio>1</sampleRatio>
@@ -50,6 +50,7 @@
         <option name="charting.legend.mode">standard</option>
         <option name="charting.legend.placement">right</option>
         <option name="charting.lineWidth">2</option>
+        <option name="refresh.display">progressbar</option>
         <option name="trellis.enabled">0</option>
         <option name="trellis.scales.shared">1</option>
         <option name="trellis.size">medium</option>

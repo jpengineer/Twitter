@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/JPE_Twitter.iml" filepath="$PROJECT_DIR$/.idea/JPE_Twitter.iml" />
+      <module fileurl="file://$USER_HOME$/PycharmProjects/sentiment/.idea/sentiment.iml" filepath="$USER_HOME$/PycharmProjects/sentiment/.idea/sentiment.iml" />
     </modules>
   </component>
 </project>

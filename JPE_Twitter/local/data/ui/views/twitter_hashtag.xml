@@ -38,7 +38,7 @@
         <option name="charting.chart.sliceCollapsingThreshold">0.01</option>
         <option name="charting.chart.stackMode">default</option>
         <option name="charting.chart.style">shiny</option>
-        <option name="charting.drilldown">none</option>
+        <option name="charting.drilldown">all</option>
         <option name="charting.layout.splitSeries">0</option>
         <option name="charting.layout.splitSeries.allowIndependentYRanges">0</option>
         <option name="charting.legend.labelStyle.overflowMode">ellipsisMiddle</option>
@@ -48,7 +48,10 @@
         <option name="refresh.display">progressbar</option>
         <option name="trellis.enabled">0</option>
         <option name="trellis.scales.shared">1</option>
-        <option name="trellis.size">medium</option>
+        <option name="trellis.size">small</option>
+        <drilldown>
+          <link target="_blank">search?q=index=twitter%20(user.lang%20=%20%22es%22%20OR%20user.lang%20=%20%22en%22)%20AND%20(lang%20=%20%22es%22%20OR%20lang%20=%20%22en%22)%0A%7C%20rename%20entities.hashtags%7B%7D.text%20as%20hashtag%0A%7C%20rename%20entities.user_mentions%7B%7D.name%20as%20user_mentions%0A%7C%20rename%20entities.user_mentions%7B%7D.screen_name%20as%20user_mentions_name%0A%0A%7C%20eval%20text%20=%20if(isnull('retweeted_status.extended_tweet.full_text'),'text',%20'retweeted_status.extended_tweet.full_text')%0A%7C%20eval%20hashtag%20=%20if(isnull('hashtag'),%22-%22,%22#%22.hashtag)%0A%7C%20eval%20user_mentions%20=%20if(isnull('user_mentions'),%22-%22,'user_mentions')%0A%7C%20eval%20%20user_mentions_name=%20if(isnull('user_mentions_name'),%22-%22,%22@%22.user_mentions_name)%0A%0A%0A%7C%20table%20text%20hashtag%20user_mentions%20user_mentions_name%0A%7Cwhere%20hashtag==%22$click.value$%22&amp;earliest=@d&amp;latest=now</link>
+        </drilldown>
       </chart>
     </panel>
   </row>

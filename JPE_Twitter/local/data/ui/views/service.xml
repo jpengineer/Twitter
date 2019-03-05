@@ -1,0 +1,33 @@
+<form theme="dark">
+  <label>SERVICE</label>
+  <description>Start/Stop/Restart/Status</description>
+  <fieldset submitButton="true">
+    <input type="dropdown" token="action">
+      <label>Select Action</label>
+      <choice value="start">Start</choice>
+      <choice value="stop">Stop</choice>
+      <choice value="status">Status</choice>
+      <choice value="restart">Restart</choice>
+    </input>
+  </fieldset>
+  <row>
+    <panel>
+      <table>
+        <title>Service logs</title>
+        <search>
+          <query>index=twitter sourcetype="service" 
+| eval pid = if(isnull(pid), "-", pid)
+| table _time type action message pid 
+| where type != ""</query>
+          <earliest>-15m</earliest>
+          <latest>now</latest>
+          <refresh>30s</refresh>
+          <refreshType>delay</refreshType>
+        </search>
+        <option name="count">10</option>
+        <option name="drilldown">none</option>
+        <option name="refresh.display">progressbar</option>
+      </table>
+    </panel>
+  </row>
+</form>

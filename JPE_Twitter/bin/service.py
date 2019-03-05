@@ -1,3 +1,17 @@
+# -*- coding: utf-8 -*-
+#///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+#                                                                                                                     //
+#   Author: Juan Alejandro Perez Chadia                                                                               //
+#   Date: 01-Sep-2018                                                                                                 //
+#   Version: V1.0                                                                                                     //
+#   Documentations:                                                                                                   //
+#       - https://developer.twitter.com/en/docs/tweets/timelines/guides/working-with-timelines                        //
+#       - https://developer.twitter.com/en/docs/tweets/timelines/api-reference/get-statuses-user_timeline.html        //
+#       - http://docs.tweepy.org/en/v3.5.0/                                                                           //
+#       - https://stackoverflow.com/questions/17157753/get-the-error-code-from-tweepy-exception-instance              //
+#                                                                                                                     //
+#///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
 import os
 import sys
 import config

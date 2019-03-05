@@ -18,8 +18,8 @@ modtime = 1543101043.500062000
 
 [views/twitter_hashtag]
 owner = admin
-version = 7.2.1
-modtime = 1544984836.964478000
+version = 7.2.4
+modtime = 1551300883.086387000
 
 [inputs/monitor%3A%2F%2F%2Fopt%2Fsplunk%2Fetc%2Fapps%2FJPE_Twitter%2Fbin%2Flogs%2Ftwitter.log]
 owner = admin
@@ -47,7 +47,7 @@ modtime = 1545093132.616324000
 [views/twitter_comments]
 owner = admin
 version = 7.2.4
-modtime = 1550880028.369615000
+modtime = 1551299828.714513000
 
 [inputs/script%3A%2F%2F%24SPLUNK_HOME%2Fetc%2Fapps%2FJPE_Twitter%2Fbin%2Ftwitter.py]
 owner = admin
@@ -58,4 +58,33 @@ modtime = 1547602690.008754000
 export = none
 owner = admin
 version = 7.2.4
-modtime = 1550882426.349496000
+modtime = 1551810202.173464000
+
+[views/service]
+owner = admin
+version = 7.2.4
+modtime = 1551813877.018272000
+
+[props/service]
+owner = admin
+version = 7.2.4
+modtime = 1551812335.043789000
+
+[inputs/monitor%3A%2F%2F%2Fopt%2Fsplunk%2Fetc%2Fapps%2FJPE_Twitter%2Fbin%2Flogs%2Fservice.log]
+owner = admin
+version = 7.2.4
+modtime = 1551812548.212910000
+
+[props/service/EXTRACT-type%2Caction%2Cmessage]
+access = read : [ * ], write : [ admin ]
+export = none
+owner = admin
+version = 7.2.4
+modtime = 1551813047.281472000
+
+[props/service/EXTRACT-pid]
+access = read : [ * ], write : [ admin ]
+export = none
+owner = admin
+version = 7.2.4
+modtime = 1551813584.132357000

@@ -1,5 +1,5 @@
 <form theme="dark">
-  <label>Configurations</label>
+  <label>API KEY</label>
   <description>Basic Configurations to Twitter App</description>
   <fieldset submitButton="false" autoRun="false">
     <input type="text" token="ACCESS_TOKEN">

@@ -1,3 +1,41 @@
-Feb 26 00:43:19 /opt/splunk/etc/apps/JPE_Twitter/bin/service.py INFO [11362]: Stop Service: The twitter service isn't started
-Feb 26 00:43:59 /opt/splunk/etc/apps/JPE_Twitter/bin/service.py INFO [11929]: Start Service: The twitter service is started - PID 11941
-Feb 26 00:48:49 /opt/splunk/etc/apps/JPE_Twitter/bin/service.py INFO [15375]: Stop Service: The service was successfully stopped
+Mar 05 15:53:19 /opt/splunk/etc/apps/JPE_Twitter/bin/service.py INFO [6491]: Start Service: The twitter service is started - PID 6499
+Mar 05 15:53:51 /opt/splunk/etc/apps/JPE_Twitter/bin/service.py INFO [6557]: Stop Service: The service was successfully stopped
+Mar 05 15:54:04 /opt/splunk/etc/apps/JPE_Twitter/bin/service.py INFO [6595]: ========= Restart Service =========
+Mar 05 15:54:04 /opt/splunk/etc/apps/JPE_Twitter/bin/service.py INFO [6595]: Stop Service: The twitter service isn't started
+Mar 05 15:54:04 /opt/splunk/etc/apps/JPE_Twitter/bin/service.py INFO [6595]: Start Service: The twitter service is started - PID 6609
+Mar 05 15:54:04 /opt/splunk/etc/apps/JPE_Twitter/bin/service.py INFO [6595]: ===================================
+Mar 05 15:54:28 /opt/splunk/etc/apps/JPE_Twitter/bin/service.py INFO [6655]: Status Service: The twitter service is started - PID 6609
+Mar 05 15:54:40 /opt/splunk/etc/apps/JPE_Twitter/bin/service.py INFO [6684]: Stop Service: The service was successfully stopped
+Mar 05 15:59:30 /opt/splunk/etc/apps/JPE_Twitter/bin/service.py INFO [8141]: Stop Service: The twitter service isn't started
+Mar 05 15:59:55 /opt/splunk/etc/apps/JPE_Twitter/bin/service.py INFO [8616]: Start Service: The twitter service is started - PID 8624
+Mar 05 16:00:06 /opt/splunk/etc/apps/JPE_Twitter/bin/service.py INFO [8803]: ========= Restart Service =========
+Mar 05 16:00:06 /opt/splunk/etc/apps/JPE_Twitter/bin/service.py INFO [8803]: Stop Service: The service was successfully stopped
+Mar 05 16:00:06 /opt/splunk/etc/apps/JPE_Twitter/bin/service.py INFO [8803]: Start Service: The twitter service is started - PID 8829
+Mar 05 16:00:06 /opt/splunk/etc/apps/JPE_Twitter/bin/service.py INFO [8803]: ===================================
+Mar 05 16:00:15 /opt/splunk/etc/apps/JPE_Twitter/bin/service.py INFO [8985]: Status Service: The twitter service is started - PID 8829
+Mar 05 16:17:25 /opt/splunk/etc/apps/JPE_Twitter/bin/service.py INFO [12772]: ========= Restart Service =========
+Mar 05 16:17:25 /opt/splunk/etc/apps/JPE_Twitter/bin/service.py INFO [12772]: Stop Service: The service was successfully stopped
+Mar 05 16:17:25 /opt/splunk/etc/apps/JPE_Twitter/bin/service.py INFO [12772]: Start Service: The twitter service is started - PID 12802
+Mar 05 16:17:25 /opt/splunk/etc/apps/JPE_Twitter/bin/service.py INFO [12772]: ===================================
+Mar 05 16:17:27 /opt/splunk/etc/apps/JPE_Twitter/bin/service.py INFO [12815]: ========= Restart Service =========
+Mar 05 16:17:27 /opt/splunk/etc/apps/JPE_Twitter/bin/service.py INFO [12815]: Stop Service: The service was successfully stopped
+Mar 05 16:17:27 /opt/splunk/etc/apps/JPE_Twitter/bin/service.py INFO [12815]: Start Service: The twitter service is started - PID 12841
+Mar 05 16:17:27 /opt/splunk/etc/apps/JPE_Twitter/bin/service.py INFO [12815]: ===================================
+Mar 05 16:17:28 /opt/splunk/etc/apps/JPE_Twitter/bin/service.py INFO [12854]: ========= Restart Service =========
+Mar 05 16:17:28 /opt/splunk/etc/apps/JPE_Twitter/bin/service.py INFO [12854]: Stop Service: The service was successfully stopped
+Mar 05 16:17:28 /opt/splunk/etc/apps/JPE_Twitter/bin/service.py INFO [12854]: Start Service: The twitter service is started - PID 12880
+Mar 05 16:17:29 /opt/splunk/etc/apps/JPE_Twitter/bin/service.py INFO [12854]: ===================================
+Mar 05 16:17:30 /opt/splunk/etc/apps/JPE_Twitter/bin/service.py INFO [12893]: ========= Restart Service =========
+Mar 05 16:17:30 /opt/splunk/etc/apps/JPE_Twitter/bin/service.py INFO [12893]: Stop Service: The twitter service isn't started
+Mar 05 16:17:30 /opt/splunk/etc/apps/JPE_Twitter/bin/service.py INFO [12893]: Start Service: The twitter service is started - PID 12909
+Mar 05 16:17:30 /opt/splunk/etc/apps/JPE_Twitter/bin/service.py INFO [12893]: ===================================
+Mar 05 16:17:30 /opt/splunk/etc/apps/JPE_Twitter/bin/service.py INFO [12921]: ========= Restart Service =========
+Mar 05 16:17:30 /opt/splunk/etc/apps/JPE_Twitter/bin/service.py INFO [12921]: Stop Service: The service was successfully stopped
+Mar 05 16:17:30 /opt/splunk/etc/apps/JPE_Twitter/bin/service.py INFO [12921]: Start Service: The twitter service is started - PID 12947
+Mar 05 16:17:30 /opt/splunk/etc/apps/JPE_Twitter/bin/service.py INFO [12921]: ===================================
+Mar 05 16:17:32 /opt/splunk/etc/apps/JPE_Twitter/bin/service.py INFO [13037]: ========= Restart Service =========
+Mar 05 16:17:33 /opt/splunk/etc/apps/JPE_Twitter/bin/service.py INFO [13037]: Stop Service: The twitter service isn't started
+Mar 05 16:17:33 /opt/splunk/etc/apps/JPE_Twitter/bin/service.py INFO [13037]: Start Service: The twitter service is started - PID 13051
+Mar 05 16:17:33 /opt/splunk/etc/apps/JPE_Twitter/bin/service.py INFO [13037]: ===================================
+Mar 05 16:17:41 /opt/splunk/etc/apps/JPE_Twitter/bin/service.py INFO [13076]: Stop Service: The twitter service isn't started
+Mar 05 16:18:17 /opt/splunk/etc/apps/JPE_Twitter/bin/service.py INFO [13202]: Stop Service: The twitter service isn't started
