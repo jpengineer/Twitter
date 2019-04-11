@@ -1,0 +1,32 @@
+[token]
+# get from developer.twitter.com
+consumer_key = aaa
+consumer_secret = aaa
+access_token = aaa
+access_secret = aaa
+
+
+[security]
+# if the encryption parameter is true, then you must write a new key.
+# status parameter is written automatically
+status = encrypted
+encryption = true
+key = asd
+
+
+[listener]
+# write each filter separated by comma
+# Sentiment NO Implemented on this version
+filter = AFP,cnn,nido,chile,santiago,metro,cnn,pinera,enel,luz,cangri,championsleague,red
+sentiment = false
+
+
+[logs]
+max_size_mb = 50
+max_log_backup = 4
+
+
+[info]
+# Writte by Twitter apps
+app_version =
+type =

@@ -3,18 +3,23 @@
 #                                                                                                                     //
 #   Author: Juan Alejandro Perez Chadia                                                                               //
 #   Date: 01-Sep-2018                                                                                                 //
-#   Version: V1.0                                                                                                     //
-#   Documentations:                                                                                                   //
-#       - https://developer.twitter.com/en/docs/tweets/timelines/guides/working-with-timelines                        //
-#       - https://developer.twitter.com/en/docs/tweets/timelines/api-reference/get-statuses-user_timeline.html        //
-#       - http://docs.tweepy.org/en/v3.5.0/                                                                           //
-#       - https://stackoverflow.com/questions/17157753/get-the-error-code-from-tweepy-exception-instance              //
-#                                                                                                                     //
+#   Version: V1.0.A                                                                                                     //
 #///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
 
 import os
 import sys
 import config
+import splunk.Intersplunk
+#import traceback
+
+#__PACKAGES__ = os.path.dirname(os.path.abspath(__file__)) + "/packages"
+#sys.path.append(__PACKAGES__)
+
+_version_ = '1.0.A'
+_author_ = 'Juan Alejandro Perez Chandia'
+_brand_ = 'JPEngineer'
+_type_ = 'Developing'
 
 
 def start_service(python, process_name):
@@ -51,11 +56,11 @@ def stop_service(process_name):
 
 
 def restart_service(python, process_name):
-    log.info("========= Restart Service =========")
+    # log.info("========= Restart Service =========")
     stop_service(process_name)
     start_service(python, process_name)
     status_service(process_name)
-    log.info("===================================")
+    # log.info("===================================")
 
 
 def status_service(process_name):
@@ -78,36 +83,47 @@ python_path = "/opt/splunk/bin/python"
 log_file = os.path.splitext(os.path.basename(__file__))[0] + '.log'
 
 # Log Configurations
-conf_file = config.InitialConfig()
-config_log = config.Log(path + "/logs/" + log_file, __file__)
-log = config_log.log_setup(5)
+path_log = os.getcwd() + '/logs/'
+conf = config.InitialConfig('twitter.conf')
+if conf.load_config():
+    logger = config.Log(log_file)
+    log = logger.config_log(path_log, conf.log_max_bkp, conf.log_max_mb)
+else:
+    print("Failed Config Load")
 
 
 try:
     # Get parameter
-    param = str(sys.argv[1])
+    # param = str(sys.argv[1])
+
+    sys.argv.insert(1, "__EXECUTE__")
+    (isgetinfo, sys.argv) = splunk.Intersplunk.isGetInfo(sys.argv)
+    results = splunk.Intersplunk.readResults(None, None, True)
+    param = sys.argv[1]
+
     if param.lower() == "start":
-        if not start_service(python_path, process):
-            exit(1)
+        start_service(python_path, process)
+        # if not start_service(python_path, process):
+            # exit(1)
     elif param.lower() == "stop":
-        if not stop_service(process):
-            exit(1)
+        stop_service(process)
+        # if not stop_service(process):
+            # exit(1)
     elif param.lower() == "status":
         if not status_service(process):
+            # splunk.Intersplunk.outputResults(results)
             log.info("Status Service: The twitter service isn't started")
         else:
             pid = get_pid(process)
+            # splunk.Intersplunk.outputResults("Status Service: The twitter service is started - PID {0}".format(pid))
             log.info("Status Service: The twitter service is started - PID {0}".format(pid))
         pass
     elif param.lower() == "restart":
-        if not restart_service(python_path, process):
-            exit(1)
+        restart_service(python_path, process)
+        # if not restart_service(python_path, process):
+            # exit(1)
     else:
         print("Invalid syntax! Remember to use start, stop, restart or status")
 
 except Exception as err:
     log.error(err.args)
-
-#   pid = os.popen("ps aux | grep JPE_Twitter/bin/twitter.py | awk '{print $2}'").readlines()[0] #call pid
-#   print(pid)
-#   os.system('kill -TERM '+pid)

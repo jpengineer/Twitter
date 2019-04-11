@@ -51,8 +51,8 @@ modtime = 1551299828.714513000
 
 [inputs/script%3A%2F%2F%24SPLUNK_HOME%2Fetc%2Fapps%2FJPE_Twitter%2Fbin%2Ftwitter.py]
 owner = admin
-version = 7.2.1
-modtime = 1547602690.008754000
+version = 7.2.4
+modtime = 1554660706.268507000
 
 [views/api_token]
 export = none
@@ -63,7 +63,7 @@ modtime = 1551810202.173464000
 [views/service]
 owner = admin
 version = 7.2.4
-modtime = 1551813877.018272000
+modtime = 1554774634.515899000
 
 [props/service]
 owner = admin
