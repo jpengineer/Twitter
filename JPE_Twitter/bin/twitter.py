@@ -16,8 +16,6 @@ from tweepy import API
 from tweepy import parsers
 from tweepy import StreamListener
 from tweepy import Stream
-#import splunklib.client as client
-#import socket
 
 
 sys.path.append('/opt/splunk/etc/apps/JPE_Twitter/bin/packages/')

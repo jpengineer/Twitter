@@ -196,6 +196,7 @@ class InitialConfig(object):
 
         security_parameter()
         self.status = True
+
         # TODO Corregir degug del config file
         _debug = self.debug
         return self.status

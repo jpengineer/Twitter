@@ -1,0 +1,107 @@
+<!--<form theme="dark" stylesheet="JPE_Twitter:panel.css">
+  <label>TOKEN</label>
+  <fieldset submitButton="false">
+    <input type="text" token="consumer_key">
+      <label>Consumer Key</label>
+    </input>
+    <input type="text" token="consumer_secret">
+      <label>Consumer Secret</label>
+    </input>
+    <input type="text" token="access_token">
+      <label>Access Token</label>
+    </input>
+    <input type="text" token="access_secret">
+      <label>Access Secret</label>
+    </input>
+    <input type="dropdown" token="encrypt">
+      <label>Encrypt</label>
+      <choice value="1">Yes</choice>
+      <choice value="0">No</choice>
+    </input>
+  </fieldset>
+</form>-->
+<form theme="dark">
+  <label>TOKEN AND SECURITY</label>
+  <search>
+    <query>
+        | script read $encrypt$ $consumer_key$ $consumer_secret$ $access_token$ $access_secret$ $key$
+    </query>
+    <earliest>-1s</earliest>
+    <latest>now</latest>
+    <done>
+      <eval token="key">if($encrypt$ == 'true',"*",$key$)</eval>
+    </done>
+  </search>
+  <fieldset submitButton="true"></fieldset>
+  <row>
+    <panel>
+      <input type="dropdown" token="encrypt">
+        <label>Do you Want to Encrypt Token?</label>
+        <choice value="true">Yes</choice>
+        <choice value="false">No</choice>
+        <default>false</default>
+        <change>
+          <condition value="true">
+            <set token="show_key">true</set>
+          </condition>
+          <condition>
+            <unset token="show_key"></unset>
+          </condition>
+        </change>
+      </input>
+      <input type="text" token="consumer_key">
+        <label>Consumer Key</label>
+        <default>*</default>
+      </input>
+      <input type="text" token="consumer_secret">
+        <label>Consumer Secret</label>
+        <default>*</default>
+      </input>
+      <input type="text" token="access_token">
+        <label>Access Token</label>
+        <default>*</default>
+      </input>
+      <input type="text" token="access_secret">
+        <label>Access Secret</label>
+        <default>*</default>
+      </input>
+      <input type="text" token="key" depends="$show_key$">
+        <label>Key</label>
+        <default>*</default>
+      </input>
+    </panel>
+  </row>
+  <row>
+    <panel>
+      <single>
+        <search>
+          <query>index=twitter sourcetype="setting" NOT type="WARNING"
+| stats latest(message) as message
+| eval range=if(message like "%success%", "low", "severe")</query>
+          <earliest>-5m@m</earliest>
+          <latest>now</latest>
+          <sampleRatio>1</sampleRatio>
+          <refresh>3s</refresh>
+          <refreshType>delay</refreshType>
+        </search>
+        <option name="colorBy">value</option>
+        <option name="colorMode">none</option>
+        <option name="drilldown">none</option>
+        <option name="numberPrecision">0</option>
+        <option name="rangeColors">["0x53a051", "0x0877a6", "0xf8be34", "0xf1813f", "0xdc4e41"]</option>
+        <option name="rangeValues">[0,30,70,100]</option>
+        <option name="refresh.display">none</option>
+        <option name="showSparkline">1</option>
+        <option name="showTrendIndicator">1</option>
+        <option name="trellis.enabled">0</option>
+        <option name="trellis.scales.shared">1</option>
+        <option name="trellis.size">medium</option>
+        <option name="trendColorInterpretation">standard</option>
+        <option name="trendDisplayMode">absolute</option>
+        <option name="unitPosition">after</option>
+        <option name="useColors">0</option>
+        <option name="useThousandSeparators">1</option>
+      </single>
+    </panel>
+  </row>
+</form>

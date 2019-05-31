@@ -54,16 +54,10 @@ owner = admin
 version = 7.2.4
 modtime = 1554660706.268507000
 
-[views/api_token]
-export = none
-owner = admin
-version = 7.2.4
-modtime = 1551810202.173464000
-
 [views/service]
 owner = admin
 version = 7.2.4
-modtime = 1554774634.515899000
+modtime = 1557861608.058634000
 
 [props/service]
 owner = admin
@@ -88,3 +82,37 @@ export = none
 owner = admin
 version = 7.2.4
 modtime = 1551813584.132357000
+
+[props/service/EVAL-status]
+export = none
+owner = admin
+version = 7.2.4
+modtime = 1554951626.231368000
+
+[views/token]
+export = none
+owner = admin
+version = 7.2.4
+modtime = 1557807465.450888000
+
+[panels/test]
+owner = admin
+version = 7.2.4
+modtime = 1557289347.830932000
+
+[props/setting]
+owner = admin
+version = 7.2.4
+modtime = 1557799424.450499000
+
+[inputs/monitor%3A%2F%2F%2Fopt%2Fsplunk%2Fetc%2Fapps%2FJPE_Twitter%2Fbin%2Flogs%2Fsplunk_read.log]
+owner = admin
+version = 7.2.4
+modtime = 1557799501.557430000
+
+[props/setting/EXTRACT-file%2Ctype%2Cdescription]
+access = read : [ * ], write : [ admin ]
+export = none
+owner = admin
+version = 7.2.4
+modtime = 1557803416.464826000

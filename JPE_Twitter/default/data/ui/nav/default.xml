@@ -1,7 +1,14 @@
 <nav search_view="search">
-  <view name="search" default='true' />
-  <view name="datasets" />
-  <view name="reports" />
-  <view name="alerts" />
-  <view name="dashboards" />
+    <collection label="Settings">
+        <view name="filter"  default='true'/>
+        <view name="token"  default='true'/>
+        <view name="service"  default='true'/>
+    </collection>
+    <collection label="Dashboard">
+        <view name="twitter_comments" />
+        <view name="twitter_hashtag" />
+        <view name="twitter_user" />
+        <view name="dashboards" />
+    </collection>
+    <view name="search"/>
 </nav>

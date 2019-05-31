@@ -17,80 +17,14 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/bin/twitter.conf">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="330">
-              <caret line="22" selection-start-line="22" selection-end-line="22" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/bin/config.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="5" selection-start-line="5" selection-end-line="10" selection-end-column="119" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/bin/config.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="195">
-              <caret line="19" selection-start-line="19" selection-end-line="23" selection-end-column="13" />
-              <folding>
-                <element signature="e#752#761#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/bin/service.py">
+        <entry file="file://$PROJECT_DIR$/bin/splunk_read.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="58" column="6" selection-start-line="58" selection-start-column="6" selection-end-line="58" selection-end-column="6" />
+            <state relative-caret-position="423">
+              <caret line="83" selection-start-line="83" selection-end-line="83" />
               <folding>
-                <element signature="e#754#763#0" expanded="true" />
+                <element signature="e#0#16#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/bin/logs/twitter.log">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret selection-end-column="88" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/bin/logs/service.log">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="15">
-              <caret line="1" selection-start-line="1" selection-end-line="1" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/local/props.conf">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="330">
-              <caret line="22" selection-start-line="22" selection-end-line="22" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/bin/twitter.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="19" column="14" selection-start-line="19" selection-start-column="14" selection-end-line="19" selection-end-column="14" />
             </state>
           </provider>
         </entry>
@@ -101,6 +35,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Python Script" />
+        <option value="CSS File" />
       </list>
     </option>
   </component>
@@ -120,16 +55,20 @@
         <option value="$PROJECT_DIR$/bin/sentiment.py" />
         <option value="$USER_HOME$/PycharmProjects/sentiment/venv/lib/python2.7/site-packages/vaderSentiment/vaderSentiment.py" />
         <option value="$USER_HOME$/PycharmProjects/sentiment/sentiment.py" />
-        <option value="$PROJECT_DIR$/default/commands.conf" />
         <option value="$PROJECT_DIR$/bin/config.json" />
         <option value="$PROJECT_DIR$/bin/logs/test.log" />
         <option value="$PROJECT_DIR$/bin/security.py" />
         <option value="$PROJECT_DIR$/bin/logs/twitter.log" />
-        <option value="$PROJECT_DIR$/bin/twitter.conf" />
         <option value="$PROJECT_DIR$/local/inputs.conf" />
-        <option value="$PROJECT_DIR$/bin/config.py" />
-        <option value="$PROJECT_DIR$/bin/twitter.py" />
         <option value="$PROJECT_DIR$/bin/service.py" />
+        <option value="$PROJECT_DIR$/default/commands.conf" />
+        <option value="$PROJECT_DIR$/appserver/static/panel.css" />
+        <option value="$PROJECT_DIR$/bin/twitter.py" />
+        <option value="$PROJECT_DIR$/bin/config.py" />
+        <option value="$PROJECT_DIR$/bin/logs/splunk_read.log" />
+        <option value="$PROJECT_DIR$/bin/splunk_read.py" />
+        <option value="$PROJECT_DIR$/bin/twitter.conf" />
+        <option value="$PROJECT_DIR$/default/data/ui/nav/default.xml" />
       </list>
     </option>
   </component>
@@ -159,18 +98,7 @@
             <path>
               <item name="JPE_Twitter" type="b2602c69:ProjectViewProjectNode" />
               <item name="JPE_Twitter" type="462c0819:PsiDirectoryNode" />
-              <item name="bin" type="462c0819:PsiDirectoryNode" />
-              <item name="logs" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="JPE_Twitter" type="b2602c69:ProjectViewProjectNode" />
-              <item name="JPE_Twitter" type="462c0819:PsiDirectoryNode" />
               <item name="default" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="JPE_Twitter" type="b2602c69:ProjectViewProjectNode" />
-              <item name="JPE_Twitter" type="462c0819:PsiDirectoryNode" />
-              <item name="local" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -187,8 +115,9 @@
     <property name="WebServerToolWindowPanel.toolwindow.show.permissions" value="false" />
     <property name="WebServerToolWindowPanel.toolwindow.show.size" value="false" />
     <property name="full.screen.before.presentation.mode" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/bin/packages" />
-    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/bin" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
+    <property name="settings.editor.selected.configurable" value="configurable.group.tools" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -319,6 +248,28 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="splunk_read" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="JPE_Twitter" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="$PROJECT_DIR$/../../../bin/python" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/bin" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/bin/splunk_read.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="twitter" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
       <module name="JPE_Twitter" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -343,13 +294,15 @@
     </configuration>
     <list>
       <item itemvalue="Python.config" />
+      <item itemvalue="Python.security" />
       <item itemvalue="Python.sentiment" />
       <item itemvalue="Python.service" />
+      <item itemvalue="Python.splunk_read" />
       <item itemvalue="Python.twitter" />
-      <item itemvalue="Python.security" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.splunk_read" />
         <item itemvalue="Python.security" />
       </list>
     </recent_temporary>
@@ -402,12 +355,21 @@
       <workItem from="1554493565747" duration="3810000" />
       <workItem from="1554659480726" duration="9986000" />
       <workItem from="1554767314741" duration="1408000" />
-      <workItem from="1554949195141" duration="212000" />
+      <workItem from="1554949195141" duration="507000" />
+      <workItem from="1556207415208" duration="647000" />
+      <workItem from="1556407010239" duration="2714000" />
+      <workItem from="1556974140242" duration="1534000" />
+      <workItem from="1556975935717" duration="295000" />
+      <workItem from="1557278818398" duration="6380000" />
+      <workItem from="1557370398317" duration="385000" />
+      <workItem from="1557370945568" duration="2000" />
+      <workItem from="1557371146961" duration="187000" />
+      <workItem from="1557377206066" duration="11000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="159184000" />
+    <option name="totallyTimeSpent" value="171846000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -419,15 +381,15 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="37" y="25" width="1883" height="1055" extended-state="6" />
+    <frame x="37" y="25" width="1403" height="875" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25367448" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.29347825" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3297414" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.3448276" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.39870688" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.24353448" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.33836207" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.3277311" />
@@ -435,7 +397,7 @@
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="11" visible="true" weight="0.51293105" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="11" visible="true" weight="0.32486632" />
       <window_info anchor="bottom" id="Python Console" order="12" weight="0.32893157" />
       <window_info anchor="bottom" id="File Transfer" order="13" weight="0.32893157" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -500,11 +462,6 @@
     <entry file="file://$PROJECT_DIR$/metadata/local.meta">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/lookups/language_code">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-270" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/local/app.conf">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -517,20 +474,8 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/bin/logs/config.logger" />
-    <entry file="file://$PROJECT_DIR$/local/.inputs.conf.swp">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/local/transforms.conf">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/local/.inputs.conf.swp" />
     <entry file="file://$PROJECT_DIR$/bin/sentiment.py" />
-    <entry file="file://$PROJECT_DIR$/local/indexes.conf">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="8" selection-start-column="1" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/PycharmProjects/sentiment/venv/local/lib/python2.7/site-packages/vaderSentiment/vaderSentiment.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1087">
@@ -555,23 +500,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/default/commands.conf">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Documentos/py_decrypt.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" selection-start-line="14" selection-end-line="15" selection-end-column="29" />
-          <folding>
-            <element signature="e#0#18#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/bin/packages/pycrypto-2.6.1-py2.7.egg-info/PKG-INFO">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="225">
@@ -579,13 +507,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/bin/twitter.conf_bkp">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/bin/logs/test.log" />
-    <entry file="file://$PROJECT_DIR$/bin/READ ME">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/../../../lib/python2.7/collections.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="237">
@@ -619,6 +541,27 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/bin/logs/config.log" />
     <entry file="file://$PROJECT_DIR$/bin/logs/message.log" />
+    <entry file="file://$PROJECT_DIR$/bin/service.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="58" column="6" selection-start-line="58" selection-start-column="6" selection-end-line="58" selection-end-column="6" />
+          <folding>
+            <element signature="e#754#763#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bin/READ ME" />
+    <entry file="file://$USER_HOME$/.PyCharm2019.1/system/python_stubs/-72291082/sys.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$USER_HOME$/Documentos/py_decrypt.py" />
+    <entry file="file://$PROJECT_DIR$/lookups/language_code">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/local/transforms.conf">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/local/inputs.conf">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -626,64 +569,85 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/bin/twitter.conf">
+    <entry file="file://$PROJECT_DIR$/local/indexes.conf">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="22" selection-start-line="22" selection-end-line="22" />
+        <state>
+          <caret column="8" selection-start-column="1" selection-end-column="8" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/bin/config.json">
+    <entry file="file://$PROJECT_DIR$/default/commands.conf">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" selection-start-line="5" selection-end-line="10" selection-end-column="119" />
+        <state relative-caret-position="90">
+          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bin/config.json" />
+    <entry file="file://$PROJECT_DIR$/appserver/static/button_click.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/appserver/static/panel.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="1" selection-start-line="4" selection-start-column="1" selection-end-line="4" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bin/twitter.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="208">
+          <caret line="66" column="29" lean-forward="true" selection-start-line="66" selection-start-column="29" selection-end-line="66" selection-end-column="29" />
+          <folding>
+            <element signature="e#874#883#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/bin/config.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="19" selection-start-line="19" selection-end-line="23" selection-end-column="13" />
+        <state relative-caret-position="150">
+          <caret line="150" column="33" selection-start-line="150" selection-start-column="21" selection-end-line="150" selection-end-column="33" />
           <folding>
             <element signature="e#752#761#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/local/props.conf">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="22" selection-start-line="22" selection-end-line="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/bin/twitter.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="19" column="14" selection-start-line="19" selection-start-column="14" selection-end-line="19" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/bin/logs/twitter.log">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-column="88" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/bin/logs/service.log">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-670">
-          <caret line="1" selection-start-line="1" selection-end-line="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/bin/service.py">
+    <entry file="file://$PROJECT_DIR$/bin/logs/splunk_read.log" />
+    <entry file="file://$PROJECT_DIR$/bin/twitter.conf">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
-          <caret line="58" column="6" selection-start-line="58" selection-start-column="6" selection-end-line="58" selection-end-column="6" />
+          <caret line="7" column="18" selection-start-line="7" selection-start-column="18" selection-end-line="7" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bin/twitter.conf_bkp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" selection-start-line="7" selection-end-line="10" selection-end-column="126" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bin/logs/twitter.log" />
+    <entry file="file://$PROJECT_DIR$/bin/logs/service.log" />
+    <entry file="file://$PROJECT_DIR$/local/props.conf">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/local/data/ui/panels/test.xml" />
+    <entry file="file://$PROJECT_DIR$/default/data/ui/nav/default.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="38" selection-start-line="2" selection-start-column="38" selection-end-line="2" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bin/splunk_read.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="423">
+          <caret line="83" selection-start-line="83" selection-end-line="83" />
           <folding>
-            <element signature="e#754#763#0" expanded="true" />
+            <element signature="e#0#16#0" expanded="true" />
           </folding>
         </state>
       </provider>
