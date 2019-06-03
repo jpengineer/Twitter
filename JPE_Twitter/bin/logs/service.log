@@ -1,1 +1,51 @@
 May 28 21:59:41 service.log INFO : Status Service: The twitter service isn't started
+May 31 17:01:20 service.log INFO : Start Service: The twitter service is started - PID 19123
+May 31 17:01:29 service.log INFO : Stop Service: The service was successfully stopped
+May 31 17:03:25 service.log INFO : Status Service: The twitter service isn't started
+May 31 17:19:33 service.log INFO : Status Service: The twitter service isn't started
+May 31 21:59:31 service.log INFO : Start Service: The twitter service is started - PID 6004
+May 31 22:00:18 service.log INFO : Stop Service: The service was successfully stopped
+May 31 22:01:10 service.log INFO : Start Service: The twitter service is started - PID 7990
+May 31 22:03:25 service.log INFO : Status Service: The twitter service is started - PID 7990
+May 31 22:06:10 service.log INFO : Stop Service: The service was successfully stopped
+May 31 22:06:39 service.log INFO : Start Service: The twitter service is started - PID 13425
+May 31 22:10:19 service.log INFO : Stop Service: The service was successfully stopped
+May 31 22:10:28 service.log INFO : Stop Service: The twitter service isn't started
+May 31 22:10:28 service.log INFO : Start Service: The twitter service is started - PID 16943
+May 31 22:10:49 service.log INFO : Stop Service: The service was successfully stopped
+May 31 22:13:27 service.log INFO : Start Service: The twitter service is started - PID 18452
+May 31 22:24:28 service.log INFO : Status Service: The twitter service is started - PID 18452
+May 31 22:24:34 service.log INFO : Stop Service: The service was successfully stopped
+May 31 22:24:42 service.log INFO : Status Service: The twitter service isn't started
+Jun 01 16:44:05 service.log INFO : Start Service: The twitter service is started - PID 4950
+Jun 01 16:44:59 service.log INFO : Stop Service: The service was successfully stopped
+Jun 01 17:00:42 service.log INFO : Start Service: The twitter service is started - PID 12273
+Jun 03 11:44:24 service.log INFO : Status Service: The twitter service isn't started
+Jun 03 11:44:32 service.log INFO : Start Service: The twitter service is started - PID 5801
+Jun 03 11:44:44 service.log INFO : Stop Service: The service was successfully stopped
+Jun 03 11:50:42 service.log INFO : Stop Service: The twitter service isn't started
+Jun 03 11:50:46 service.log INFO : Start Service: The twitter service is started - PID 8604
+Jun 03 11:52:37 service.log INFO : Start Service: The service could not be started because it already exists - PID 8604
+Jun 03 11:53:15 service.log INFO : Stop Service: The service was successfully stopped
+Jun 03 11:54:52 service.log INFO : Start Service: The twitter service is started - PID 11367
+Jun 03 11:55:09 service.log INFO : Stop Service: The service was successfully stopped
+Jun 03 11:55:09 service.log INFO : Start Service: The twitter service is started - PID 11662
+Jun 03 11:55:22 service.log INFO : Stop Service: The service was successfully stopped
+Jun 03 11:58:40 service.log INFO : Start Service: The twitter service is started - PID 13114
+Jun 03 11:58:54 service.log INFO : Stop Service: The service was successfully stopped
+Jun 03 12:00:44 service.log INFO : Stop Service: The twitter service isn't started
+Jun 03 12:00:46 service.log INFO : Start Service: The twitter service is started - PID 14110
+Jun 03 12:01:49 service.log INFO : Stop Service: The service was successfully stopped
+Jun 03 12:07:59 service.log INFO : Stop Service: The twitter service isn't started
+Jun 03 12:08:02 service.log INFO : Start Service: The twitter service is started - PID 17279
+Jun 03 12:08:15 service.log INFO : Stop Service: The service was successfully stopped
+Jun 03 12:09:02 service.log INFO : Stop Service: The twitter service isn't started
+Jun 03 12:09:13 service.log INFO : Start Service: The twitter service is started - PID 18306
+Jun 03 12:09:24 service.log INFO : Stop Service: The service was successfully stopped
+Jun 03 12:09:30 service.log INFO : Stop Service: The twitter service isn't started
+Jun 03 12:10:34 service.log INFO : Stop Service: The twitter service isn't started
+Jun 03 12:13:41 service.log INFO : Stop Service: The twitter service isn't started
+Jun 03 12:13:45 service.log INFO : Stop Service: The twitter service isn't started
+Jun 03 12:13:45 service.log INFO : Start Service: The twitter service is started - PID 21149
+Jun 03 12:14:05 service.log INFO : Stop Service: The service was successfully stopped
+Jun 03 12:16:26 service.log INFO : Stop Service: The twitter service isn't started

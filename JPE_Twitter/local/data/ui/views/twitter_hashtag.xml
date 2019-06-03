@@ -7,7 +7,7 @@
       <chart>
         <title>Most Used Hashtag on Twitter</title>
         <search>
-          <query>index=twitter (user.lang = "es" OR user.lang = "en") AND (lang = "es" OR lang = "en")
+          <query>index=twitter sourcetype=twitter
 |rename entities.hashtags{}.text as hashtag
 |eval hashtag = "#".hashtag
 |stats count by hashtag | sort - count useother=f limit=20</query>
@@ -61,7 +61,7 @@
       <table>
         <title>Hashtag by number of use</title>
         <search>
-          <query>index=twitter (user.lang = "es" OR user.lang = "en") AND (lang = "es" OR lang = "en")
+          <query>index=twitter sourcetype=twitter
 |rename entities.hashtags{}.text as hashtag
 |eval hashtag = "#".hashtag
 |stats count by hashtag | sort - count | sort - count</query>

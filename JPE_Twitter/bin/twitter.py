@@ -18,7 +18,8 @@ from tweepy import StreamListener
 from tweepy import Stream
 
 
-sys.path.append('/opt/splunk/etc/apps/JPE_Twitter/bin/packages/')
+_PACKAGE_ = os.getcwd() + '/packages'
+sys.path.append(_PACKAGE_)
 
 _version_ = '1.0.A'
 _author_ = 'Juan Alejandro Perez Chandia'

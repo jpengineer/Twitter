@@ -24,7 +24,7 @@
   <label>TOKEN AND SECURITY</label>
   <search>
     <query>
-        | script read $encrypt$ $consumer_key$ $consumer_secret$ $access_token$ $access_secret$ $key$
+        | script read security $encrypt$ $consumer_key$ $consumer_secret$ $access_token$ $access_secret$ $key$
     </query>
     <earliest>-1s</earliest>
     <latest>now</latest>
@@ -75,7 +75,7 @@
     <panel>
       <single>
         <search>
-          <query>index=twitter sourcetype="setting" NOT type="WARNING"
+          <query>index=twitter sourcetype="setting" NOT type="ERROR" NOT "filter"
 | stats latest(message) as message
 | eval range=if(message like "%success%", "low", "severe")</query>
           <earliest>-5m@m</earliest>
@@ -88,7 +88,7 @@
         <option name="colorMode">none</option>
         <option name="drilldown">none</option>
         <option name="numberPrecision">0</option>
-        <option name="rangeColors">["0x53a051", "0x0877a6", "0xf8be34", "0xf1813f", "0xdc4e41"]</option>
+        <option name="rangeColors">["0x53a051","0x0877a6","0xf8be34","0xf1813f","0xdc4e41"]</option>
         <option name="rangeValues">[0,30,70,100]</option>
         <option name="refresh.display">none</option>
         <option name="showSparkline">1</option>

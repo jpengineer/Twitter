@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 #///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 #                                                                                                                     //
-#   Author: Juan Alejandro Perez Chadia                                                                               //
+#   Author: Juan Alejandro Perez Chandia                                                                               //
 #   Date: 01-Sep-2018                                                                                                 //
 #   Version: V1.0.A                                                                                                     //
 #///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -11,10 +11,6 @@ import os
 import sys
 import config
 import splunk.Intersplunk
-#import traceback
-
-#__PACKAGES__ = os.path.dirname(os.path.abspath(__file__)) + "/packages"
-#sys.path.append(__PACKAGES__)
 
 _version_ = '1.0.A'
 _author_ = 'Juan Alejandro Perez Chandia'
@@ -79,7 +75,7 @@ def get_pid(process_name):
 # Initial Configurations
 path = os.getcwd()
 process = path + "/twitter.py"
-python_path = "/opt/splunk/bin/python"
+python_path = "$SPLUNK_HOME/bin/python"
 log_file = os.path.splitext(os.path.basename(__file__))[0] + '.log'
 
 # Log Configurations
@@ -93,9 +89,6 @@ else:
 
 
 try:
-    # Get parameter
-    # param = str(sys.argv[1])
-
     sys.argv.insert(1, "__EXECUTE__")
     (isgetinfo, sys.argv) = splunk.Intersplunk.isGetInfo(sys.argv)
     results = splunk.Intersplunk.readResults(None, None, True)
@@ -103,25 +96,21 @@ try:
 
     if param.lower() == "start":
         start_service(python_path, process)
-        # if not start_service(python_path, process):
-            # exit(1)
+
     elif param.lower() == "stop":
         stop_service(process)
-        # if not stop_service(process):
-            # exit(1)
+
     elif param.lower() == "status":
         if not status_service(process):
-            # splunk.Intersplunk.outputResults(results)
             log.info("Status Service: The twitter service isn't started")
+
         else:
             pid = get_pid(process)
-            # splunk.Intersplunk.outputResults("Status Service: The twitter service is started - PID {0}".format(pid))
             log.info("Status Service: The twitter service is started - PID {0}".format(pid))
-        pass
+
     elif param.lower() == "restart":
         restart_service(python_path, process)
-        # if not restart_service(python_path, process):
-            # exit(1)
+
     else:
         print("Invalid syntax! Remember to use start, stop, restart or status")
 

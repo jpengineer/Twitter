@@ -1,12 +1,11 @@
 <dashboard theme="dark">
   <label>Twitter Comments</label>
-  <description>Comentarios y Usuarios mencionados</description>
   <row>
     <panel>
       <title>User Mentions</title>
       <chart>
         <search>
-          <query>index=twitter (user.lang = "es" OR user.lang = "en") AND (lang = "es" OR lang = "en")
+          <query>index=twitter sourcetype=twitter
 | rename entities.hashtags{}.text as hashtag
 | rename entities.user_mentions{}.name as user_mentions
 | rename entities.user_mentions{}.screen_name as user_mentions_name
@@ -18,7 +17,7 @@
 
 
 | stats count by user_mentions_name | where user_mentions_name != "-" | sort -count useother=f limit=20</query>
-          <earliest>@d</earliest>
+          <earliest>-7d@h</earliest>
           <latest>now</latest>
           <sampleRatio>1</sampleRatio>
         </search>
@@ -62,7 +61,7 @@
       <title>Comments</title>
       <table>
         <search>
-          <query>index=twitter (user.lang = "es" OR user.lang = "en") AND (lang = "es" OR lang = "en")
+          <query>index=twitter sourcetype=twitter
 | rename entities.hashtags{}.text as hashtag
 | rename entities.user_mentions{}.name as user_mentions
 | rename entities.user_mentions{}.screen_name as user_mentions_name
@@ -74,7 +73,7 @@
 
 
 | table text hashtag user_mentions user_mentions_name</query>
-          <earliest>@d</earliest>
+          <earliest>-7d@h</earliest>
           <latest>now</latest>
           <sampleRatio>1</sampleRatio>
         </search>
@@ -82,6 +81,7 @@
         <option name="dataOverlayMode">none</option>
         <option name="drilldown">none</option>
         <option name="percentagesRow">false</option>
+        <option name="refresh.display">progressbar</option>
         <option name="rowNumbers">false</option>
         <option name="totalsRow">false</option>
         <option name="wrap">true</option>

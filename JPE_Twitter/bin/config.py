@@ -15,7 +15,8 @@ import time
 import ConfigParser
 import security
 
-sys.path.append('/opt/splunk/etc/apps/JPE_Twitter/bin/packages')
+_PACKAGE_ = os.getcwd() + '/packages'
+sys.path.append(_PACKAGE_)
 
 _version_ = '1.0.A'
 _author_ = 'Juan Alejandro Perez Chandia'
@@ -235,8 +236,9 @@ class Log(object):
 # ==================================================================================
 #                           T  E  S  T  I  N  G
 # ==================================================================================
-#
-# if __name__ == '__main__':
+if __name__ == '__main__':
+    print('Ejecutando como programa principal')
+    print(os.getcwd() + '/packages')
 #     initConf = InitialConfig('twitter.conf')
 #     if initConf.load_config():
 #

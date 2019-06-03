@@ -7,7 +7,7 @@
       <chart>
         <title>Top User by Numer of Followers</title>
         <search>
-          <query>index=twitter lang=es 
+          <query>index=twitter sourcetype=twitter
 |rename user.screen_name as user | rename user.followers_count as user_followers | rename user.location as location
 |eval location = if(location=="null","Sin Datos", location)
 |eval user = "@".user | table user user_followers | sort -user_followers useother=f limit=20 | dedup user</query>
@@ -58,7 +58,7 @@
       <table>
         <title>User Detail</title>
         <search>
-          <query>index=twitter lang=es 
+          <query>index=twitter sourcetype=twitter
 |rename user.screen_name as user | rename user.followers_count as user_followers | rename user.location as location
 |eval location = if(location=="null","Sin Datos", location)
 |eval user = "@".user | table user user.name location user_followers | sort -user_followers | dedup user</query>
