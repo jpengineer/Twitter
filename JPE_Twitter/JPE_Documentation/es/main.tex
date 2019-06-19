@@ -1,0 +1,138 @@
+\documentclass[a4paper]{article}
+\usepackage{pagecolor,lipsum}
+\usepackage{ragged2e}
+\usepackage{graphicx}
+\usepackage[none]{hyphenat}
+\input{oppsett}
+
+\title{JPE\_Twitter} % tittel
+\newcommand{\subtitle}{Aplicación Splunk para Mineria de Twitter} % undertittel
+%\newcommand{\sammendrag}{Sammendrag legges inn her. \lipsum*[2]} % sammendrag
+\newcommand{\sammendrag}{\justify El presente documento fue pensado, diseñado y redactado \'unica y exclusivamente para la comprensi\'on general del aplicativo JPE\_Twitter, por lo tanto, no puede ser editado y distribuido sin la previa autorizaci\'on escrita de su autor.}
+\newcommand{\notatnummer}{Mayo de 2019} % dato for rapport (erstatter notatnummer)
+
+\author{%
+    Juan Alejandro P\'erez Chand\'ia \\
+    Ingeniero Inform\'atico\\
+    jalejandro.ingeniero@gmail.com
+}
+
+\newcommand{\hoydestrek}{125pt} % kommer an på antall forfattere
+
+\definecolor{text}{HTML}{D5D5D5}
+\definecolor{background}{HTML}{222222}
+
+\usepackage{caption}
+\usepackage[font={color=text,bf},figurename=Fig.]{caption}
+
+\input{preforside}
+
+\pagestyle{fancy}
+ 
+\fancyfoot{}
+\renewcommand{\footrulewidth}{0pt}
+\renewcommand{\headrulewidth}{0pt}
+% \fancyfoot[RO,LE]{\centering \color{text}\thepage}
+\fancyfoot[R]{\centering \color{text}\thepage}
+\fancyhead{}
+\fancyhead[L]{}
+\fancyhead[C]{}
+
+\date{\today}
+% 			S T A R T   D O C U M E N T
+\begin{document}
+\pagecolor{background}
+\color{text}
+\sloppy 
+
+\input{forside}
+\addtocounter{page}{1}
+% \begin{large}
+
+\section*{Introducci\'on}
+JPE\_Twitter es una aplicaci\'on Splunk desarrollada en Python, cuya finalidad es la miner\'ia en Twitter e integraci\'on completa con la herramienta de an\'alisis de logs anteriormente mencionada. Con JPE\_Twitter podr\'as extraer de Twitter informaci\'on relevante basada en filtros de palabras, frases, oraciones, hashtag, etc. y obtener datos que indican lo que est\'a pasando en un negocio o servicio determinado en dicha red social, construyendo as\'i, una base de desarrollo para el an\'alisis de sentimiento en Twitter.
+\newpage
+
+\section*{Generalidades del Desarrollo}
+
+El aplicativo esta desarrollado en python 2.7, con la finalidad de compartir la instalación base de python de la plataforma Splunk (6.x o superior) y cuenta con cinco m\'odulos esenciales:
+
+\begin{itemize}
+\item {\bf config :} El aplicativo cuenta con un archivo de configuraci\'on llamado \textit{twitter.conf}, donde el modulo config l\'ee y escribe los p\'arametros necesarios para la autentificaci\'on del listener con la API de Twitter, configuraci\'on base de logs, encriptaci\'on, entre otros.
+
+\item {\bf security :} Para la seguridad de datos sencibles (Token autenticaci\'on), este m\'odulo cuenta con lo necesario para cifrar y descifrar en base a la clave que el usario determine en la configuraci\'on de los token en Splunk.
+
+\item {\bf splunk\_read :} El objetivo de este m\'odulo es tomar todos los par\'ametros ingresados desde la plataforma Splunk y llevarlos al m\'odulo correspondiente (config, security, service, entre otros).
+
+\item {\bf service :} Encargado de iniciar, detener y reiniciar el servicio, adem\'as de obtener su estado.
+
+\item {\bf twitter :} Corresponde al listener propiamente tal, qui\'en retornar\'a todo lo filtrado en Twitter y posteriormente ser indexado en Splunk.
+\newline
+\end{itemize}
+
+Adem\'as, JPE\_Twitter cuenta con sus propios logs, para hacer debug del proceso en curso mediante splunk o visualizando directamente los archivos logs:
+
+\begin{itemize}
+\item {\bf config.log :} Muestra el proceso ejecutado por el m\'odulo \textit{config}, incluyendo sus problemas (si existe alguno).
+\item {\bf service.log :} Muestra el estado del servicio y su PID correspondiente, adem\'as incluye los problemas que dicho servicio pudiese presentar.
+\item {\bf twitter.log :} Muestra el estado de la autenticaci\'on con la API de Twitter y los mensajes filtrados desde dicha red social.
+\item {\bf splunk\_read.log :} Muestra el proceso ejecutado por el m\'odulo \textit{splunk\_read}, incluyendo sus problemas (si existe alguno).
+\newline
+\end{itemize}
+
+\begin{figure}[h!]
+	\centering
+	\includegraphics[scale=0.33]{img/arquitectura.PNG}
+	\caption{\color{text}JPE\_Twitter General Diagram}
+\end{figure}
+
+\textit{\small \textbf{Importante:} Todas las librer\'ias necesarias para el correcto funcionamiento del aplicativo, se encuentran incluidas en el paquete de instalaci\'on}
+
+\subsection*{Dashboards}
+
+Para la administraci\'on del proceso de escucha de Twitter existen tres dashboard importantes, que permiten configurar los token de autentificaci\'on, configurar los filtros correspondientes e iniciar, detener o reiniciar el servicio:
+
+\begin{itemize}
+\item Token and Security
+\item Filter
+\item Service
+\newline
+\end{itemize}
+
+\subsubsection*{Token and Security}
+
+Este dashboard permite configurar los token de autenticaci\'on de la API de Twitter, los cuales son: \textit{consumer key, consumer secret, access token y access secret}. Estos token quedan almacenados en el archivo de configuraci\'on \textit{twitter.conf} y en lo que a seguridad respecta, los token de autenticaci\'on pueden ser encriptados para evitar que terceros accedan a ellos, solo es necesario escribir una clave de encriptaci\'on en el mismo panel, luego de indicar que deseas encriptar los token.
+
+\begin{figure}[h!]
+	\centering
+	\includegraphics[scale=0.2]{img/token.png}
+	\caption{\color{text}Setting: Token and Security Dashboard}
+\end{figure}
+
+Es importante considerar que: para obtener los token, se debe crear un cuenta de desarrollador en Twitter (\url{https://developer.twitter.com})
+\subsubsection*{Filter}
+
+Este dashboard permite configurar los filtros que se aplicar\'an en el proceso de escucha. Las opciones de configuraci\'n incluyen la acci\'on de agregar nuevo filtro al ya configurado o configurar nuevos filtros, mediante la elecci\'on de \textit{add o new} respectivamente.\\ Los filtros ingresados pueden ser palabras, frases, hashtag, entre otros y deben ser separados por una coma.
+
+\begin{figure}[h!]
+	\centering
+	\includegraphics[scale=0.2]{img/filter.png}
+	\caption{\color{text}Twitter Comments Dashboard}
+\end{figure}
+
+\begin{figure}[h!]
+	\centering
+	\includegraphics[scale=0.2]{img/user.png}
+	\caption{\color{text}Twitter User Dashboard}
+\end{figure}
+
+\begin{figure}[h!]
+	\centering
+	\includegraphics[scale=0.2]{img/hashtag.png}
+	\caption{\color{text}Twitter Hashtag Dashboard}
+\end{figure}
+
+
+% \end{large}
+
+\end{document}

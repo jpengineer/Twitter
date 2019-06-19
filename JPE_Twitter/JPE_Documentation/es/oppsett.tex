@@ -1,0 +1,57 @@
+\usepackage[norsk]{babel}
+\usepackage[bottom=8em]{geometry}
+\usepackage{amsmath}
+\usepackage{graphicx}
+
+\usepackage{ifluatex}
+\ifluatex
+%% Ved bruk av lualatex %%
+\usepackage{fontspec}
+\setmainfont{Linux Libertine O}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\else
+%% Ved bruk av pdflatex %%
+\usepackage[utf8]{inputenc}
+\usepackage{libertine} % linux libertine font
+%\usepackage[libertine]{newtxmath}
+\usepackage[T1]{fontenc}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\fi
+
+\usepackage{parskip}
+\usepackage{xcolor}
+\usepackage{lipsum}
+\usepackage{calc}
+\usepackage[labelfont=bf,textfont=normal,justification=justified,singlelinecheck=false,width=0.9\textwidth]{caption}
+
+\usepackage{booktabs}
+\usepackage{longtable}
+\usepackage{rotating}
+\usepackage{tabularx}
+
+\usepackage{fancyhdr}
+
+
+\definecolor{skde}{HTML}{0099e5}
+\definecolor{skdelys}{HTML}{0099e5}
+\definecolor{newcolor}{HTML}{333333}
+\definecolor{number}{HTML}{D5D5D5}
+
+%\definecolor{skde}{RGB}{0,79,158}
+%\definecolor{skdelys}{RGB}{122,178,220}
+
+\usepackage{sectsty}
+\chapterfont{\color{skde}}  % sets colour of chapters
+\sectionfont{\color{skde}}  % sets colour of sections
+\subsectionfont{\color{skde}}  % sets colour of sections
+%\subsubsectionfont{\color{skde}}  % sets colour of sections
+
+\usepackage[colorlinks, citecolor=number, linkcolor=number, urlcolor=number]{hyperref}
+
+
+% Flere figurer per side etc
+\renewcommand{\topfraction}{0.95}	% max fraction of floats at top
+\renewcommand{\bottomfraction}{0.95}	% max fraction of floats at bottom
+\renewcommand{\textfraction}{0.05}	% allow minimal text w. figs
+\renewcommand{\floatpagefraction}{.8} %only pages with more than 80% of floats, will become pure float-only pages. The default is 0.6
+
