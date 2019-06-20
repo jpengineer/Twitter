@@ -25,6 +25,9 @@
 \usepackage{caption}
 \usepackage[font={color=text,bf},figurename=Fig.]{caption}
 
+	
+\usepackage{geometry}
+\geometry{top=2cm, bottom=2cm}
 \input{preforside}
 
 \pagestyle{fancy}
@@ -56,7 +59,7 @@ JPE\_Twitter es una aplicaci\'on Splunk desarrollada en Python, cuya finalidad e
 \section*{Generalidades del Desarrollo}
 
 El aplicativo esta desarrollado en python 2.7, con la finalidad de compartir la instalación base de python de la plataforma Splunk (6.x o superior) y cuenta con cinco m\'odulos esenciales:
-
+\newline
 \begin{itemize}
 \item {\bf config :} El aplicativo cuenta con un archivo de configuraci\'on llamado \textit{twitter.conf}, donde el modulo config l\'ee y escribe los p\'arametros necesarios para la autentificaci\'on del listener con la API de Twitter, configuraci\'on base de logs, encriptaci\'on, entre otros.
 
@@ -71,7 +74,7 @@ El aplicativo esta desarrollado en python 2.7, con la finalidad de compartir la 
 \end{itemize}
 
 Adem\'as, JPE\_Twitter cuenta con sus propios logs, para hacer debug del proceso en curso mediante splunk o visualizando directamente los archivos logs:
-
+\newline
 \begin{itemize}
 \item {\bf config.log :} Muestra el proceso ejecutado por el m\'odulo \textit{config}, incluyendo sus problemas (si existe alguno).
 \item {\bf service.log :} Muestra el estado del servicio y su PID correspondiente, adem\'as incluye los problemas que dicho servicio pudiese presentar.
@@ -87,11 +90,11 @@ Adem\'as, JPE\_Twitter cuenta con sus propios logs, para hacer debug del proceso
 \end{figure}
 
 \textit{\small \textbf{Importante:} Todas las librer\'ias necesarias para el correcto funcionamiento del aplicativo, se encuentran incluidas en el paquete de instalaci\'on}
-
+\newpage
 \subsection*{Dashboards}
 
-Para la administraci\'on del proceso de escucha de Twitter existen tres dashboard importantes, que permiten configurar los token de autentificaci\'on, configurar los filtros correspondientes e iniciar, detener o reiniciar el servicio:
-
+Para la administraci\'on del proceso de escucha de Twitter existen tres dashboard importantes, que permiten configurar los token de autentificaci\'on, configurar los filtros correspondientes e iniciar, detener, reiniciar o verificar el estado del servicio:
+\newline
 \begin{itemize}
 \item Token and Security
 \item Filter
@@ -99,10 +102,19 @@ Para la administraci\'on del proceso de escucha de Twitter existen tres dashboar
 \newline
 \end{itemize}
 
+Además, cuenta con tres dashboard básicos que permiten visualizar información general de Twitter, en base a los filtros aplicados, tales como: usuario con más seguidores, hashtags más usados y usuarios mencionados: 
+\newline
+\begin{itemize}
+\item Twitter Users
+\item Twitter Hashtag
+\item Twitter Comments
+\newline
+\end{itemize}
+
 \subsubsection*{Token and Security}
 
 Este dashboard permite configurar los token de autenticaci\'on de la API de Twitter, los cuales son: \textit{consumer key, consumer secret, access token y access secret}. Estos token quedan almacenados en el archivo de configuraci\'on \textit{twitter.conf} y en lo que a seguridad respecta, los token de autenticaci\'on pueden ser encriptados para evitar que terceros accedan a ellos, solo es necesario escribir una clave de encriptaci\'on en el mismo panel, luego de indicar que deseas encriptar los token.
-
+\newline
 \begin{figure}[h!]
 	\centering
 	\includegraphics[scale=0.2]{img/token.png}
@@ -110,26 +122,35 @@ Este dashboard permite configurar los token de autenticaci\'on de la API de Twit
 \end{figure}
 
 Es importante considerar que: para obtener los token, se debe crear un cuenta de desarrollador en Twitter (\url{https://developer.twitter.com})
+\newpage
 \subsubsection*{Filter}
 
-Este dashboard permite configurar los filtros que se aplicar\'an en el proceso de escucha. Las opciones de configuraci\'n incluyen la acci\'on de agregar nuevo filtro al ya configurado o configurar nuevos filtros, mediante la elecci\'on de \textit{add o new} respectivamente.\\ Los filtros ingresados pueden ser palabras, frases, hashtag, entre otros y deben ser separados por una coma.
-
+Este dashboard permite configurar los filtros que se aplicar\'an en el proceso de escucha. Las opciones de configuraci\'n incluyen la acci\'on de agregar nuevo filtro al que se encuentra actualmente configurado o configurar nuevos filtros reemplazando a los anteriores, mediante la elecci\'on de \textit{add o new} respectivamente.\\ Los filtros ingresados pueden ser palabras, frases, hashtag, entre otros y deben ser separados por una coma.
+\newline
 \begin{figure}[h!]
 	\centering
 	\includegraphics[scale=0.2]{img/filter.png}
-	\caption{\color{text}Twitter Comments Dashboard}
+	\caption{\color{text}Setting: filter Dashboard}
 \end{figure}
 
+\subsubsection*{Service}
+
+Este dashboard permite ejecutar acciones sobre el servicio de Twitter. La opción Start permite iniciar el servicio y comenzar a indexar data obtenida desde Twitter y como requisito previo, se requiere tener configurado los Token de autenticación y los filtros. La opción Stop es la encargada de detener el servicio. La opción Restart permite reiniciar el servicio si es requerido por desarrollos propios u otras razones. La opcion Status indica si el servicio se encuentra activo o detenido.
+\newline
+\begin{figure}[h!]
+	\centering
+	\includegraphics[scale=0.2]{img/service.png}
+	\caption{\color{text}Setting: Service Dashboard}
+\end{figure}
+
+
+\subsubsection*{Twitter Users}
+
+Este dashboard presenta información relacionada a usuarios de la red social, tales como: cantidad de seguidores, nombre, alias y ubicación 
 \begin{figure}[h!]
 	\centering
 	\includegraphics[scale=0.2]{img/user.png}
 	\caption{\color{text}Twitter User Dashboard}
-\end{figure}
-
-\begin{figure}[h!]
-	\centering
-	\includegraphics[scale=0.2]{img/hashtag.png}
-	\caption{\color{text}Twitter Hashtag Dashboard}
 \end{figure}
 
 
