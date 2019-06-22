@@ -2,6 +2,8 @@
 \usepackage{pagecolor,lipsum}
 \usepackage{ragged2e}
 \usepackage{graphicx}
+\usepackage{subcaption}
+\usepackage{enumitem}
 \usepackage[none]{hyphenat}
 \input{oppsett}
 
@@ -146,14 +148,68 @@ Este dashboard permite ejecutar acciones sobre el servicio de Twitter. La opció
 
 \subsubsection*{Twitter Users}
 
-Este dashboard presenta información relacionada a usuarios de la red social, tales como: cantidad de seguidores, nombre, alias y ubicación 
+Este dashboard presenta información relacionada a usuarios de la red social, tales como: cantidad de seguidores, nombre, alias y ubicación. Sobre el mismo dashboard se pueden aplicar desarrollos para obtener informaci\'on adicional.
+\newline
 \begin{figure}[h!]
 	\centering
 	\includegraphics[scale=0.2]{img/user.png}
 	\caption{\color{text}Twitter User Dashboard}
 \end{figure}
 
+\subsubsection*{Twitter Hashtag}
 
+Este dashboard presenta informaci\'on relacionada a los hashtag m\'as usados durante el d\'ia. Sobre el mismo dashboard se pueden aplicar desarrollos para obtener informaci\'on adicional.
+\newline
+\begin{figure}[h!]
+	\centering
+	\includegraphics[scale=0.2]{img/hashtag.png}
+	\caption{\color{text}Twitter Hashtag Dashboard}
+\end{figure}
+
+\newpage
+
+\subsubsection*{Comments}
+
+Esta dashboard presenta el detalle de los usuarios m\'as comentados del d\'ia, comentarios realizados e informaci\'on del usuario. Sobre el mismo dashboard se pueden aplicar desarrollos para obtener informaci\'on adicional.
+\newline
+\begin{figure}[h!]
+	\centering
+	\includegraphics[scale=0.2]{img/comments.png}
+	\caption{\color{text}Twitter Comments Dashboard}
+\end{figure}
+
+\newpage
+
+\subsection*{Instalaci\'on}
+
+JPE\_Twitter esta probado en versiones 6.x de Splunk o superior y fue desarrollado en Splunk 7, el cual ser\'a usado para para la gu\'ia de instalaci\'on.\\
+\\
+Considerando que la aplicaci\'on ya se encuentra descargada, debes seguir los siguuentes pasos:
+\newline
+\begin{enumerate}[label=(\alph*)]
+\item Hacer click en el apartado superi\'or izquierdo de la plataforma Splunk, que dice \textbf{App: Search \& Reporting} > \textbf{Manage Apps}
+\item Hacer click en el extremo superior derecho de la plataforma, en el bot\'on \textbf{Install Apps from File}
+\item Hacer click en \textbf{Examine} y seleccionar JPE\_Twitter.zip, luego hacer click en \textbf{Upload}
+\newline
+\end{enumerate}
+
+\begin{figure}[h!]
+  \centering
+  \begin{subfigure}[b]{0.49\linewidth}
+    \includegraphics[width=\linewidth]{img/a.png}
+     \caption{\color{text} Manage Apps}
+  \end{subfigure}
+  \begin{subfigure}[b]{0.49\linewidth}
+    \includegraphics[width=\linewidth]{img/b.png}
+    \caption{\color{text} Install Apps from File}
+  \end{subfigure}
+  \begin{subfigure}[b]{0.49\linewidth}
+    \includegraphics[width=\linewidth]{img/c.png}
+    \caption{\color{text} Upload}
+  \end{subfigure}
+  \caption{\color{text} Instalaci\'on de la aplicaci\'on JPE\_Twitter}
+  \label{fig:coffee3}
+\end{figure}
 % \end{large}
 
 \end{document}
