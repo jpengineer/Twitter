@@ -1,4 +1,4 @@
-This is LuaTeX, Version 1.0.4 (TeX Live 2017/Debian)  (format=lualatex 2018.11.14)  23 JUN 2019 00:30
+This is LuaTeX, Version 1.0.4 (TeX Live 2017/Debian)  (format=lualatex 2018.11.14)  23 JUN 2019 00:34
  restricted system commands enabled.
 **main.tex
 (./main.tex
@@ -34,7 +34,7 @@ Inserting `luaotfload.aux.set_capheight' at position 3 in `luaotfload.patch_font
 '.
 Inserting `luaotfload.rewrite_fontname' at position 4 in `luaotfload.patch_font'
 .
-luaotfload | main : initialization completed in 0.081 seconds
+luaotfload | main : initialization completed in 0.078 seconds
 Babel <3.18> and hyphenation patterns for 1 language(s) loaded.
 (/usr/share/texlive/texmf-dist/tex/latex/base/article.cls
 Document Class: article 2014/09/29 v1.4h Standard LaTeX document class
@@ -1670,15 +1670,9 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 268.
  (./main.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 268.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 268.
+Package rerunfilecheck Info: File `main.out' has not changed.
+(rerunfilecheck)             Checksum: 2FC8AC5DC34F3A9276E4AA0833CA53A1;767.
 
-
-Package rerunfilecheck Warning: File `main.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `main.out':
-(rerunfilecheck)             Before: 95AD2A36F94FE96E5553804BAA7306BD;759
-(rerunfilecheck)             After:  2FC8AC5DC34F3A9276E4AA0833CA53A1;767.
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
@@ -1693,7 +1687,7 @@ Here is how much of LuaTeX's memory you used:
 bute_list, 1 write nodes
    avail lists: 2:405,3:114,4:50,5:163,6:1982,7:494,8:39,9:120,10:17,11:275
  33063 multiletter control sequences out of 65536+600000
- 59 fonts using 13462923 bytes
+ 59 fonts using 13462867 bytes
  57i,11n,67p,545b,554s stack positions out of 5000i,500n,10000p,200000b,100000s
 </usr/share/texmf/fonts/opentype/public/lm/lmmono10-regular.otf></usr/share/texl
 ive/texmf-dist/fonts/opentype/public/libertine/LinLibertine_RBI.otf></usr/share/
@@ -1702,7 +1696,7 @@ re/texlive/texmf-dist/fonts/opentype/public/libertine/LinLibertine_RB.otf></usr/
 share/texlive/texmf-dist/fonts/opentype/public/libertine/LinLibertine_R.otf>{/us
 r/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texlive/texmf
 -dist/fonts/type1/urw/palatino/uplr8a.pfb>
-Output written on main.pdf (10 pages, 969467 bytes).
+Output written on main.pdf (10 pages, 969469 bytes).
 
 PDF statistics: 204 PDF objects out of 1000 (max. 8388607)
  146 compressed objects within 2 object streams
