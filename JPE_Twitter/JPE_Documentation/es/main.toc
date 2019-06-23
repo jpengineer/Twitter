@@ -7,7 +7,7 @@
 \contentsline {subsubsection}{\numberline {2.1.3}Service}{6}{subsubsection.2.1.3}
 \contentsline {subsubsection}{\numberline {2.1.4}Twitter Users}{7}{subsubsection.2.1.4}
 \contentsline {subsubsection}{\numberline {2.1.5}Twitter Hashtag}{7}{subsubsection.2.1.5}
-\contentsline {subsubsection}{\numberline {2.1.6}Comments}{8}{subsubsection.2.1.6}
+\contentsline {subsubsection}{\numberline {2.1.6}Twitter Comments}{8}{subsubsection.2.1.6}
 \contentsline {section}{\numberline {3}Instalaci\'on}{9}{section.3}
 \contentsline {section}{\numberline {4}Validaciones}{10}{section.4}
 \contentsline {section}{\numberline {5}Soporte, consultas o comentarios}{10}{section.5}
