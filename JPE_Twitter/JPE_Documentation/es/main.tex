@@ -5,6 +5,9 @@
 \usepackage{subcaption}
 \usepackage{enumitem}
 \usepackage[none]{hyphenat}
+
+\usepackage{tocloft}
+
 \input{oppsett}
 
 \title{JPE\_Twitter} % tittel
@@ -44,8 +47,13 @@
 \fancyhead[C]{}
 
 \date{\today}
+
+
+
+
 % 			S T A R T   D O C U M E N T
 \begin{document}
+\renewcommand*\contentsname{Contenido}
 \pagecolor{background}
 \color{text}
 \sloppy 
@@ -54,11 +62,14 @@
 \addtocounter{page}{1}
 % \begin{large}
 
-\section*{Introducci\'on}
+\section{Introducci\'on}
 JPE\_Twitter es una aplicaci\'on Splunk desarrollada en Python, cuya finalidad es la miner\'ia en Twitter e integraci\'on completa con la herramienta de an\'alisis de logs anteriormente mencionada. Con JPE\_Twitter podr\'as extraer de Twitter informaci\'on relevante basada en filtros de palabras, frases, oraciones, hashtag, etc. y obtener datos que indican lo que est\'a pasando en un negocio o servicio determinado en dicha red social, construyendo as\'i, una base de desarrollo para el an\'alisis de sentimiento en Twitter.
 \newpage
+\tableofcontents
+\thispagestyle{empty}
 
-\section*{Generalidades del Desarrollo}
+\newpage
+\section{Generalidades del Desarrollo}
 
 El aplicativo esta desarrollado en python 2.7, con la finalidad de compartir la instalación base de python de la plataforma Splunk (6.x o superior) y cuenta con cinco m\'odulos esenciales:
 \newline
@@ -93,7 +104,7 @@ Adem\'as, JPE\_Twitter cuenta con sus propios logs, para hacer debug del proceso
 
 \textit{\small \textbf{Importante:} Todas las librer\'ias necesarias para el correcto funcionamiento del aplicativo, se encuentran incluidas en el paquete de instalaci\'on}
 \newpage
-\subsection*{Dashboards}
+\subsection{Dashboards}
 
 Para la administraci\'on del proceso de escucha de Twitter existen tres dashboard importantes, que permiten configurar los token de autentificaci\'on, configurar los filtros correspondientes e iniciar, detener, reiniciar o verificar el estado del servicio:
 \newline
@@ -113,7 +124,7 @@ Además, cuenta con tres dashboard básicos que permiten visualizar información
 \newline
 \end{itemize}
 
-\subsubsection*{Token and Security}
+\subsubsection{Token and Security}
 
 Este dashboard permite configurar los token de autenticaci\'on de la API de Twitter, los cuales son: \textit{consumer key, consumer secret, access token y access secret}. Estos token quedan almacenados en el archivo de configuraci\'on \textit{twitter.conf} y en lo que a seguridad respecta, los token de autenticaci\'on pueden ser encriptados para evitar que terceros accedan a ellos, solo es necesario escribir una clave de encriptaci\'on en el mismo panel, luego de indicar que deseas encriptar los token.
 \newline
@@ -125,7 +136,7 @@ Este dashboard permite configurar los token de autenticaci\'on de la API de Twit
 
 Es importante considerar que: para obtener los token, se debe crear un cuenta de desarrollador en Twitter (\url{https://developer.twitter.com})
 \newpage
-\subsubsection*{Filter}
+\subsubsection{Filter}
 
 Este dashboard permite configurar los filtros que se aplicar\'an en el proceso de escucha. Las opciones de configuraci\'n incluyen la acci\'on de agregar nuevo filtro al que se encuentra actualmente configurado o configurar nuevos filtros reemplazando a los anteriores, mediante la elecci\'on de \textit{add o new} respectivamente.\\ Los filtros ingresados pueden ser palabras, frases, hashtag, entre otros y deben ser separados por una coma.
 \newline
@@ -135,7 +146,7 @@ Este dashboard permite configurar los filtros que se aplicar\'an en el proceso d
 	\caption{\color{text}Setting: filter Dashboard}
 \end{figure}
 
-\subsubsection*{Service}
+\subsubsection{Service}
 
 Este dashboard permite ejecutar acciones sobre el servicio de Twitter. La opción Start permite iniciar el servicio y comenzar a indexar data obtenida desde Twitter y como requisito previo, se requiere tener configurado los Token de autenticación y los filtros. La opción Stop es la encargada de detener el servicio. La opción Restart permite reiniciar el servicio si es requerido por desarrollos propios u otras razones. La opcion Status indica si el servicio se encuentra activo o detenido.
 \newline
@@ -146,7 +157,7 @@ Este dashboard permite ejecutar acciones sobre el servicio de Twitter. La opció
 \end{figure}
 
 
-\subsubsection*{Twitter Users}
+\subsubsection{Twitter Users}
 
 Este dashboard presenta información relacionada a usuarios de la red social, tales como: cantidad de seguidores, nombre, alias y ubicación. Sobre el mismo dashboard se pueden aplicar desarrollos para obtener informaci\'on adicional.
 \newline
@@ -156,7 +167,7 @@ Este dashboard presenta información relacionada a usuarios de la red social, ta
 	\caption{\color{text}Twitter User Dashboard}
 \end{figure}
 
-\subsubsection*{Twitter Hashtag}
+\subsubsection{Twitter Hashtag}
 
 Este dashboard presenta informaci\'on relacionada a los hashtag m\'as usados durante el d\'ia. Sobre el mismo dashboard se pueden aplicar desarrollos para obtener informaci\'on adicional.
 \newline
@@ -168,7 +179,7 @@ Este dashboard presenta informaci\'on relacionada a los hashtag m\'as usados dur
 
 \newpage
 
-\subsubsection*{Comments}
+\subsubsection{Comments}
 
 Esta dashboard presenta el detalle de los usuarios m\'as comentados del d\'ia, comentarios realizados e informaci\'on del usuario. Sobre el mismo dashboard se pueden aplicar desarrollos para obtener informaci\'on adicional.
 \newline
@@ -180,9 +191,9 @@ Esta dashboard presenta el detalle de los usuarios m\'as comentados del d\'ia, c
 
 \newpage
 
-\subsection*{Instalaci\'on}
+\section{Instalaci\'on}
 
-JPE\_Twitter esta probado en versiones 6.x de Splunk o superior y fue desarrollado en Splunk 7, el cual ser\'a usado para para la gu\'ia de instalaci\'on.\\
+JPE\_Twitter esta probado en versiones 6.x de Splunk o superior y fue desarrollado en Splunk 7, el cual ser\'a usado en la gu\'ia de instalaci\'on.\\
 \\
 Considerando que la aplicaci\'on ya se encuentra descargada, debes seguir los siguuentes pasos:
 \newline
@@ -208,8 +219,50 @@ Considerando que la aplicaci\'on ya se encuentra descargada, debes seguir los si
     \caption{\color{text} Upload}
   \end{subfigure}
   \caption{\color{text} Instalaci\'on de la aplicaci\'on JPE\_Twitter}
-  \label{fig:coffee3}
+  \label{fig:instalacion}
 \end{figure}
-% \end{large}
 
+Con estos simples pasos, JPE\_Twitter se encontrar\'a instalado. La recomendaci\'on pos-instalaci\'on es reiniciar Splunk.
+\newpage
+\section{Validaciones}
+
+Para la validaci\'on de la instalaci\'on se deben seguir los siguientes pasos:
+\newline
+
+\begin{enumerate}[label=(\alph*)]
+\item Hacer click en el apartado superior derecho de la plataforma, en la secci\'on \textbf{Setting > Indexes}
+\item Validar que exista el index \textbf{twitter}
+\item Hacer click en \textbf{Setting > Source Types} y validar que existan los source types \textbf{twitter, setting} y \textbf{service}
+\newline
+\end{enumerate}
+
+\begin{figure}[h!]
+  \centering
+  \begin{subfigure}[b]{0.49\linewidth}
+    \includegraphics[width=\linewidth]{img/f.png}
+     \caption{\color{text} Setting: Index - Sourcetype}
+  \end{subfigure}
+  \begin{subfigure}[b]{0.49\linewidth}
+    \includegraphics[width=\linewidth]{img/d.png}
+    \caption{\color{text} Index}
+  \end{subfigure}
+  \begin{subfigure}[b]{0.49\linewidth}
+    \includegraphics[width=\linewidth]{img/e.png}
+    \caption{\color{text} Sourcetype}
+  \end{subfigure}
+  \caption{\color{text} Validaciones}
+  \label{fig:validacion}
+\end{figure}
+
+\textbf{Index twitter: }Es el repositorio de datos del aplicativo instalado.\\
+\textbf{Source Type twitter: }Identifica la estructura de los datos filtrados de Twitter.\\
+\textbf{Source Type service: }Identifica la estructura de los datos generador por el m\'odulo \textit{service.py}\\
+\textbf{Source Type setting: }Identifica la estructura de los datos generador por los m\'odulos \textit{twitter.py} y \textit{security.py}
+\newline
+\section{Soporte, consultas o comentarios}
+
+\textbf{Nombre: }Juan Alejandro P\'erez Chand\'ia\\
+\textbf{E-Mail: }jalejandro.ingeniero@gmail.com\\
+\textbf{Idioma: }Espa\~nol - Ingl\'es
+% \end{large}
 \end{document}

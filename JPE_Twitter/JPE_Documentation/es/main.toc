@@ -1,0 +1,13 @@
+\babel@toc {norsk}{}
+\contentsline {section}{\numberline {1}Introducci\'on}{2}{section.1}
+\contentsline {section}{\numberline {2}Generalidades del Desarrollo}{4}{section.2}
+\contentsline {subsection}{\numberline {2.1}Dashboards}{5}{subsection.2.1}
+\contentsline {subsubsection}{\numberline {2.1.1}Token and Security}{5}{subsubsection.2.1.1}
+\contentsline {subsubsection}{\numberline {2.1.2}Filter}{6}{subsubsection.2.1.2}
+\contentsline {subsubsection}{\numberline {2.1.3}Service}{6}{subsubsection.2.1.3}
+\contentsline {subsubsection}{\numberline {2.1.4}Twitter Users}{7}{subsubsection.2.1.4}
+\contentsline {subsubsection}{\numberline {2.1.5}Twitter Hashtag}{7}{subsubsection.2.1.5}
+\contentsline {subsubsection}{\numberline {2.1.6}Comments}{8}{subsubsection.2.1.6}
+\contentsline {section}{\numberline {3}Instalaci\'on}{9}{section.3}
+\contentsline {section}{\numberline {4}Validaciones}{10}{section.4}
+\contentsline {section}{\numberline {5}Soporte, consultas o comentarios}{10}{section.5}
