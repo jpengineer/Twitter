@@ -1,4 +1,4 @@
-This is LuaTeX, Version 1.0.4 (TeX Live 2017/Debian)  (format=lualatex 2018.11.14)  23 JUN 2019 00:16
+This is LuaTeX, Version 1.0.4 (TeX Live 2017/Debian)  (format=lualatex 2018.11.14)  23 JUN 2019 00:25
  restricted system commands enabled.
 **main.tex
 (./main.tex
@@ -34,7 +34,7 @@ Inserting `luaotfload.aux.set_capheight' at position 3 in `luaotfload.patch_font
 '.
 Inserting `luaotfload.rewrite_fontname' at position 4 in `luaotfload.patch_font'
 .
-luaotfload | main : initialization completed in 0.076 seconds
+luaotfload | main : initialization completed in 0.077 seconds
 Babel <3.18> and hyphenation patterns for 1 language(s) loaded.
 (/usr/share/texlive/texmf-dist/tex/latex/base/article.cls
 Document Class: article 2014/09/29 v1.4h Standard LaTeX document class
@@ -1323,7 +1323,12 @@ File: t1ppl.fd 2001/06/04 font definitions for T1/ppl.
 LaTeX Font Warning: Font shape `T1/ppl//' undefined
 (Font)              using `T1/ppl/m/n' instead on input line 10.
 
-) (./main.aux)
+)
+
+LaTeX Warning: Unused global option(s):
+    [report].
+
+(./main.aux)
 \openout1 = main.aux
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 55.
@@ -1342,8 +1347,7 @@ LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 55.
 LaTeX Font Info:    ... okay on input line 55.
 LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 55.
 LaTeX Font Info:    ... okay on input line 55.
-
-(/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+ (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count315
 \scratchdimen=\dimen294
@@ -1389,24 +1393,24 @@ Package caption Info: End \AtBeginDocument code.
 *geometry* detected driver: pdftex
 *geometry* verbose mode - [ preamble ] result:
 * driver: pdftex
-* paper: a4paper
+* paper: <default>
 * layout: <same size as paper>
 * layoutoffset:(h,v)=(0.0pt,0.0pt)
 * modes: 
-* h-part:(L,W,R)=(89.62709pt, 418.25368pt, 89.6271pt)
-* v-part:(T,H,B)=(56.9055pt, 731.23584pt, 56.9055pt)
-* \paperwidth=597.50787pt
-* \paperheight=845.04684pt
-* \textwidth=418.25368pt
-* \textheight=731.23584pt
-* \oddsidemargin=17.3571pt
-* \evensidemargin=17.3571pt
+* h-part:(L,W,R)=(92.14519pt, 430.00462pt, 92.14519pt)
+* v-part:(T,H,B)=(56.9055pt, 681.15898pt, 56.9055pt)
+* \paperwidth=614.295pt
+* \paperheight=794.96999pt
+* \textwidth=430.00462pt
+* \textheight=681.15898pt
+* \oddsidemargin=19.8752pt
+* \evensidemargin=19.8752pt
 * \topmargin=-52.36449pt
 * \headheight=12.0pt
 * \headsep=25.0pt
 * \topskip=10.0pt
 * \footskip=30.0pt
-* \marginparwidth=57.0pt
+* \marginparwidth=65.0pt
 * \marginparsep=11.0pt
 * \columnsep=10.0pt
 * \skip\footins=9.0pt plus 4.0pt minus 2.0pt
@@ -1504,12 +1508,16 @@ LaTeX Info: Redefining \nameref on input line 55.
  ABD: EveryShipout initializing macros
 \GPT@outputbox=\box63
  (./forside.tex
+Underfull \hbox (badness 2376) in paragraph at lines 15--15
+[]\TU/LinuxLibertineO(0)/m/n/10 El pre-sen-te do-cu-men-to fue pen-sado, di-se
+ña-do y re-dacta-do úni-ca y
+ []
+
 <img/jp_gris.png, id=55, 360.34625pt x 283.0575pt>
 File: img/jp_gris.png Graphic file (type png)
 <use img/jp_gris.png>
 Package luatex.def Info: img/jp_gris.png  used on input line 38.
 (luatex.def)             Requested size: 115.63243pt x 90.83075pt.
-
 [1
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}<./img/jp_gris.png>])
@@ -1574,13 +1582,6 @@ File: img/filter.png Graphic file (type png)
 <use img/filter.png>
 Package luatex.def Info: img/filter.png  used on input line 145.
 (luatex.def)             Requested size: 378.00555pt x 190.90987pt.
-
-Underfull \hbox (badness 1460) in paragraph at lines 141--148
-\TU/LinuxLibertineO(0)/m/n/10 o con-fi-gu-rar nue-vos fil-tros re-emp-lazan-do 
-a los an-terio-res, medi-an-te la elección de \TU/LinuxLibertineO(0)/m/it/10 a
-dd o new
- []
-
 <img/service.png, id=108, 1890.06125pt x 954.56625pt>
 File: img/service.png Graphic file (type png)
 <use img/service.png>
@@ -1591,7 +1592,7 @@ File: img/user.png Graphic file (type png)
 <use img/user.png>
 Package luatex.def Info: img/user.png  used on input line 166.
 (luatex.def)             Requested size: 375.5966pt x 193.11807pt.
-[6<./img/filter.png><./img/service.png>]
+ [6<./img/filter.png><./img/service.png>]
 <img/hashtag.png, id=118, 1878.01625pt x 965.6075pt>
 File: img/hashtag.png Graphic file (type png)
 <use img/hashtag.png>
@@ -1603,7 +1604,7 @@ File: img/comments.png Graphic file (type png)
 <use img/comments.png>
 Package luatex.def Info: img/comments.png  used on input line 188.
 (luatex.def)             Requested size: 375.5966pt x 244.91066pt.
-[8<./img/comments.png>]
+ [8<./img/comments.png>]
 Underfull \hbox (badness 10000) in paragraph at lines 196--200
 
  []
@@ -1622,17 +1623,17 @@ Underfull \hbox (badness 10000) in paragraph at lines 203--205
 File: img/a.png Graphic file (type png)
 <use img/a.png>
 Package luatex.def Info: img/a.png  used on input line 210.
-(luatex.def)             Requested size: 204.9466pt x 109.70786pt.
+(luatex.def)             Requested size: 210.70462pt x 112.79082pt.
 <img/b.png, id=135, 1648.1575pt x 882.29625pt>
 File: img/b.png Graphic file (type png)
 <use img/b.png>
 Package luatex.def Info: img/b.png  used on input line 214.
-(luatex.def)             Requested size: 204.9466pt x 109.70786pt.
+(luatex.def)             Requested size: 210.70462pt x 112.79082pt.
 <img/c.png, id=136, 1648.1575pt x 882.29625pt>
 File: img/c.png Graphic file (type png)
 <use img/c.png>
 Package luatex.def Info: img/c.png  used on input line 218.
-(luatex.def)             Requested size: 204.9466pt x 109.70786pt.
+(luatex.def)             Requested size: 210.70462pt x 112.79082pt.
 [9<./img/a.png><./img/b.png><./img/c.png>]
 Underfull \hbox (badness 10000) in paragraph at lines 229--231
 
@@ -1647,17 +1648,17 @@ Underfull \hbox (badness 10000) in paragraph at lines 235--237
 File: img/f.png Graphic file (type png)
 <use img/f.png>
 Package luatex.def Info: img/f.png  used on input line 242.
-(luatex.def)             Requested size: 204.9466pt x 106.77245pt.
+(luatex.def)             Requested size: 210.70462pt x 109.75946pt.
 <img/d.png, id=149, 2223.30624pt x 1158.3275pt>
 File: img/d.png Graphic file (type png)
 <use img/d.png>
 Package luatex.def Info: img/d.png  used on input line 246.
-(luatex.def)             Requested size: 204.9466pt x 106.77245pt.
+(luatex.def)             Requested size: 210.70462pt x 109.75946pt.
 <img/e.png, id=150, 2223.30624pt x 1158.3275pt>
 File: img/e.png Graphic file (type png)
 <use img/e.png>
 Package luatex.def Info: img/e.png  used on input line 250.
-(luatex.def)             Requested size: 204.9466pt x 106.77245pt.
+(luatex.def)             Requested size: 210.70462pt x 109.75946pt.
 
 Underfull \hbox (badness 10000) in paragraph at lines 257--262
 
@@ -1675,21 +1676,18 @@ Package rerunfilecheck Info: File `main.out' has not changed.
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 268.
 )
 
 Here is how much of LuaTeX's memory you used:
- 30065 strings out of 494480
+ 30068 strings out of 494480
  100000,953878 words of node,token memory allocated
  808 words of node memory still in use:
    7 hlist, 2 vlist, 2 rule, 6 glue, 1 kern, 8 attribute, 113 glue_spec, 8 attri
 bute_list, 1 write nodes
-   avail lists: 2:405,3:114,4:50,5:163,6:1982,7:494,8:39,9:121,10:16,11:275
- 33060 multiletter control sequences out of 65536+600000
- 59 fonts using 13462867 bytes
+   avail lists: 2:405,3:114,4:50,5:163,6:1982,7:494,8:39,9:120,10:17,11:275
+ 33063 multiletter control sequences out of 65536+600000
+ 59 fonts using 13462895 bytes
  57i,11n,67p,545b,554s stack positions out of 5000i,500n,10000p,200000b,100000s
 </usr/share/texmf/fonts/opentype/public/lm/lmmono10-regular.otf></usr/share/texl
 ive/texmf-dist/fonts/opentype/public/libertine/LinLibertine_RBI.otf></usr/share/
@@ -1698,7 +1696,7 @@ re/texlive/texmf-dist/fonts/opentype/public/libertine/LinLibertine_RB.otf></usr/
 share/texlive/texmf-dist/fonts/opentype/public/libertine/LinLibertine_R.otf>{/us
 r/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texlive/texmf
 -dist/fonts/type1/urw/palatino/uplr8a.pfb>
-Output written on main.pdf (10 pages, 969382 bytes).
+Output written on main.pdf (10 pages, 969458 bytes).
 
 PDF statistics: 204 PDF objects out of 1000 (max. 8388607)
  146 compressed objects within 2 object streams
