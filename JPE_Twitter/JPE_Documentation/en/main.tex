@@ -64,8 +64,6 @@
 
 \section{Introduction}
 JPE\_Twitter is a Splunk Application developed in Python, whose purpose is the Twitter Mining and complete integration with the log analysis tool previously mentioned. With JPE\_Twitter you'll can extract of Twitter important information based on words filter, phrases, hashtag, among other and get data indicate what's happening with our business or service on Twitter, building a development base to sentiment analysis on Twitter.
-\\-----------\\
-JPE\_Twitter es una aplicaci\'on Splunk desarrollada en Python, cuya finalidad es la miner\'ia en Twitter e integraci\'on completa con la herramienta de an\'alisis de logs anteriormente mencionada. Con JPE\_Twitter podr\'as extraer de Twitter informaci\'on relevante basada en filtros de palabras, frases, oraciones, hashtag, etc. y obtener datos que indican lo que est\'a pasando en un negocio o servicio determinado en dicha red social, construyendo as\'i, una base de desarrollo para el an\'alisis de sentimiento en Twitter.
 \newpage
 \tableofcontents
 \thispagestyle{empty}
@@ -76,40 +74,28 @@ JPE\_Twitter es una aplicaci\'on Splunk desarrollada en Python, cuya finalidad e
 The application is developed in Python 2.7, with the purpose of sharing the Python base installation of the Splunk platform (6.x or higher) and has five essential modules:
 \newline
 \begin{itemize}
-\item {\bf config :} The application has a configuration file called \textit{twitter.conf}, where config module read and write the necessary parameter to the authentication with Twitter API, logs file configuration, encrypt, among other.
+\item {\bf config :} The application has a configuration file called \textit{twitter.conf}, where config module can read and write the necessary parameter to the authentication with Twitter API, log files configuration, encrypt, among others.
 
 \item {\bf security :} For the security of confidential data (authentication token), this module has what it needs to encrypt and decrypt, based on the key that the user defines in the configuration of the tokens in Splunk.
 
-\item {\bf splunk\_read :} The purpose of this modules is take all parameters entered from the Splunk platform and take them to the corresponding module (config, security, service, among other).
+\item {\bf splunk\_read :} The purpose of this modules is take all parameters entered from the Splunk platform and take them to the corresponding module (config, security, service, among others).
 
 \item {\bf service :} Responsible to start, stop and restart the service, besides to obtain its status.
 
 \item {\bf twitter :} Corresponding to the main module, who will return everything filtered on Twitter.
 \newline
 \end{itemize}
--------\\
-El aplicativo esta desarrollado en python 2.7, con la finalidad de compartir la instalación base de python de la plataforma Splunk (6.x o superior) y cuenta con cinco m\'odulos esenciales:
+
+Besides, JPE\_Twitter has its own log files, [for | to] make process debug through Splunk or directly looking at log files: 
 \newline
 \begin{itemize}
-\item {\bf config :} El aplicativo cuenta con un archivo de configuraci\'on llamado \textit{twitter.conf}, donde el modulo config l\'ee y escribe los p\'arametros necesarios para la autentificaci\'on del listener con la API de Twitter, configuraci\'on base de logs, encriptaci\'on, entre otros.
+\item {\bf config.log :} Show the ran process by \textit{config} module, including its problem (if there are any).
 
-\item {\bf security :} Para la seguridad de datos sencibles (Token autenticaci\'on), este m\'odulo cuenta con lo necesario para cifrar y descifrar en base a la clave que el usario determine en la configuraci\'on de los token en Splunk.
+\item {\bf service.log :} Show the service state and its PID, besides include problems that this service could have.
 
-\item {\bf splunk\_read :} El objetivo de este m\'odulo es tomar todos los par\'ametros ingresados desde la plataforma Splunk y llevarlos al m\'odulo correspondiente (config, security, service, entre otros).
+\item {\bf twitter.log :} Show the authentication state with Twitter API and filtered messages from this social network.
 
-\item {\bf service :} Encargado de iniciar, detener y reiniciar el servicio, adem\'as de obtener su estado.
-
-\item {\bf twitter :} Corresponde al listener propiamente tal, qui\'en retornar\'a todo lo filtrado en Twitter y posteriormente ser indexado en Splunk.
-\newline
-\end{itemize}
-
-Adem\'as, JPE\_Twitter cuenta con sus propios logs, para hacer debug del proceso en curso mediante splunk o visualizando directamente los archivos logs:
-\newline
-\begin{itemize}
-\item {\bf config.log :} Muestra el proceso ejecutado por el m\'odulo \textit{config}, incluyendo sus problemas (si existe alguno).
-\item {\bf service.log :} Muestra el estado del servicio y su PID correspondiente, adem\'as incluye los problemas que dicho servicio pudiese presentar.
-\item {\bf twitter.log :} Muestra el estado de la autenticaci\'on con la API de Twitter y los mensajes filtrados desde dicha red social.
-\item {\bf splunk\_read.log :} Muestra el proceso ejecutado por el m\'odulo \textit{splunk\_read}, incluyendo sus problemas (si existe alguno).
+\item {\bf splunk\_read.log :} Show the ran process by \textit{splunk\_read} module, including its problem (if there are any).
 \newline
 \end{itemize}
 
@@ -119,11 +105,11 @@ Adem\'as, JPE\_Twitter cuenta con sus propios logs, para hacer debug del proceso
 	\caption{\color{text}JPE\_Twitter General Diagram}
 \end{figure}
 
-\textit{\small \textbf{Importante:} Todas las librer\'ias necesarias para el correcto funcionamiento del aplicativo, se encuentran incluidas en el paquete de instalaci\'on}
+\textit{\small \textbf{Important:} All necessary libraries to proper running of aplication, is includes on the installation package.}
 \newpage
 \subsection{Dashboards}
 
-Para la administraci\'on del proceso de escucha de Twitter existen tres dashboard importantes, que permiten configurar los token de autentificaci\'on, configurar los filtros correspondientes e iniciar, detener, reiniciar o verificar el estado del servicio:
+For administration of Twitter listener process it exists three important dashboard, that allow configure the authentication tokens and filters, besides allow start, stop and restart service or verificate its status:
 \newline
 \begin{itemize}
 \item Token and Security
@@ -132,7 +118,7 @@ Para la administraci\'on del proceso de escucha de Twitter existen tres dashboar
 \newline
 \end{itemize}
 
-Además, cuenta con tres dashboard básicos que permiten visualizar información general de Twitter, en base a los filtros aplicados, tales como: usuario con más seguidores, hashtags más usados y usuarios mencionados: 
+And also have with three basic dashboard, that allow show Twitter general information base on the filters configurated, such as user with most followers, hashtag the most used and users mention:
 \newline
 \begin{itemize}
 \item Twitter Users
@@ -143,15 +129,14 @@ Además, cuenta con tres dashboard básicos que permiten visualizar información
 
 \subsubsection{Token and Security}
 
-Este dashboard permite configurar los token de autenticaci\'on de la API de Twitter, los cuales son: \textit{consumer key, consumer secret, access token y access secret}. Estos token quedan almacenados en el archivo de configuraci\'on \textit{twitter.conf} y en lo que a seguridad respecta, los token de autenticaci\'on pueden ser encriptados para evitar que terceros accedan a ellos, solo es necesario escribir una clave de encriptaci\'on en el mismo panel, luego de indicar que deseas encriptar los token.
+This dashboard allow to configure the authentication tokens of Twitter API, which are: \textit{consumer key, consumer secret, access token and access secret}. This tokens are stored in configuration file \textit{twitter.conf} and security concern, the authentication tokens can be encrypted to prevent that other people access to them, only is necessary to write an encryption key in the same panel, after to indicate that you want to encrypt the tokens.
 \newline
 \begin{figure}[h!]
 	\centering
 	\includegraphics[scale=0.2]{img/token.png}
 	\caption{\color{text}Setting: Token and Security Dashboard}
 \end{figure}
-
-Es importante considerar que: para obtener los token, se debe crear un cuenta de desarrollador en Twitter (\url{https://developer.twitter.com})
+It is important consider that: to obtein tokens, it must create a developer account on Twitter (\url{https://developer.twitter.com})
 \newpage
 \subsubsection{Filter}
 
