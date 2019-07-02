@@ -136,11 +136,12 @@ This dashboard allow to configure the authentication tokens of Twitter API, whic
 	\includegraphics[scale=0.2]{img/token.png}
 	\caption{\color{text}Setting: Token and Security Dashboard}
 \end{figure}
+\newline
 It is important consider that: to obtein tokens, it must create a developer account on Twitter (\url{https://developer.twitter.com})
 \newpage
 \subsubsection{Filter}
 
-Este dashboard permite configurar los filtros que se aplicar\'an en el proceso de escucha. Las opciones de configuraci\'n incluyen la acci\'on de agregar nuevo filtro al que se encuentra actualmente configurado o configurar nuevos filtros reemplazando a los anteriores, mediante la elecci\'on de \textit{add o new} respectivamente.\\ Los filtros ingresados pueden ser palabras, frases, hashtag, entre otros y deben ser separados por una coma.
+This dashboard allow to configure filters that will be apply in listener Twitter process. Configuration option include adding new filter to the already configured or create new filter, replacing the previous ones, by choosing \textit{add o new} respectively. \\Entered filters can be words, phrases, hashtag, among others and should be separate by comma.
 \newline
 \begin{figure}[h!]
 	\centering
@@ -150,7 +151,7 @@ Este dashboard permite configurar los filtros que se aplicar\'an en el proceso d
 
 \subsubsection{Service}
 
-Este dashboard permite ejecutar acciones sobre el servicio de Twitter. La opción Start permite iniciar el servicio y comenzar a indexar data obtenida desde Twitter y como requisito previo, se requiere tener configurado los Token de autenticación y los filtros. La opción Stop es la encargada de detener el servicio. La opción Restart permite reiniciar el servicio si es requerido por desarrollos propios u otras razones. La opcion Status indica si el servicio se encuentra activo o detenido.
+This dashboard allows action run over Twitter service. Start option allows initiate to service and begin indexing data obtained from Twitter and as previous requisite, is required do you have authentication tokens and filters configurated. Stop option is responsible to stop it service. Restart option allows automatically stop and start service if is require by own development or others reason. Status option shows service information (active or stopped).
 \newline
 \begin{figure}[h!]
 	\centering
@@ -161,7 +162,7 @@ Este dashboard permite ejecutar acciones sobre el servicio de Twitter. La opció
 
 \subsubsection{Twitter Users}
 
-Este dashboard presenta información relacionada a usuarios de la red social, tales como: cantidad de seguidores, nombre, alias y ubicación. Sobre el mismo dashboard se pueden aplicar desarrollos para obtener informaci\'on adicional.
+This dashboard shows Twitter users information, as followers number, name, alias and location. On the same dashboard new developments can be applied to obtain additional information.
 \newline
 \begin{figure}[h!]
 	\centering
@@ -171,7 +172,7 @@ Este dashboard presenta información relacionada a usuarios de la red social, ta
 
 \subsubsection{Twitter Hashtag}
 
-Este dashboard presenta informaci\'on relacionada a los hashtag m\'as usados durante el d\'ia. Sobre el mismo dashboard se pueden aplicar desarrollos para obtener informaci\'on adicional.
+This dashboard shows hashtag information (trending topic). On the same dashboard new developments can be applied to obtain additional information.
 \newline
 \begin{figure}[h!]
 	\centering
@@ -182,8 +183,7 @@ Este dashboard presenta informaci\'on relacionada a los hashtag m\'as usados dur
 \newpage
 
 \subsubsection{Twitter Comments}
-
-Esta dashboard presenta el detalle de los usuarios m\'as comentados del d\'ia, comentarios realizados e informaci\'on del usuario. Sobre el mismo dashboard se pueden aplicar desarrollos para obtener informaci\'on adicional.
+This dashboard shows the details of the most commented users, comments made and user information. On the same dashboard new developments can be applied to obtain additional information.
 \newline
 \begin{figure}[h!]
 	\centering
@@ -193,16 +193,15 @@ Esta dashboard presenta el detalle de los usuarios m\'as comentados del d\'ia, c
 
 \newpage
 
-\section{Instalaci\'on}
-
-JPE\_Twitter esta probado en versiones 6.x de Splunk o superior y fue desarrollado en Splunk 7, el cual ser\'a usado en la gu\'ia de instalaci\'on.\\
+\section{Instalation}
+JPE\_Twitter was tested in Splunk 6.x versions or higher and was development on Splunk 7, which will be used in the following intalation guide.\\
 \\
-Considerando que la aplicaci\'on ya se encuentra descargada, debes seguir los siguuentes pasos:
+Considering that application is downloaded, you must follow the next steps:
 \newline
 \begin{enumerate}[label=(\alph*)]
-\item Hacer click en el apartado superi\'or izquierdo de la plataforma Splunk, que dice \textbf{App: Search \& Reporting} > \textbf{Manage Apps}
-\item Hacer click en el extremo superior derecho de la plataforma, en el bot\'on \textbf{Install Apps from File}
-\item Hacer click en \textbf{Examine} y seleccionar JPE\_Twitter.zip, luego hacer click en \textbf{Upload}
+\item Make click on top left of the Splunk platform, says \textbf{App: Search \& Reporting} > \textbf{Manage Apps}
+\item Make click on top right of the Splunk platform, on the buttom \textbf{Install Apps from File}
+\item Make click on \textbf{Examine} and select JPE\_Twitter.zip, later make click on \textbf{Upload}
 \newline
 \end{enumerate}
 
@@ -223,18 +222,17 @@ Considerando que la aplicaci\'on ya se encuentra descargada, debes seguir los si
   \caption{\color{text} Instalaci\'on de la aplicaci\'on JPE\_Twitter}
   \label{fig:instalacion}
 \end{figure}
-
-Con estos simples pasos, JPE\_Twitter se encontrar\'a instalado. La recomendaci\'on pos-instalaci\'on es reiniciar Splunk.
+With these simple steps, JPE\_Twitter will be installed. The recomendation is to restart Splunk.
 \newpage
-\section{Validaciones}
+\section{Validations}
 
-Para la validaci\'on de la instalaci\'on se deben seguir los siguientes pasos:
+For the validation of installation, you must follow the next steps:
 \newline
 
 \begin{enumerate}[label=(\alph*)]
-\item Hacer click en el apartado superior derecho de la plataforma, en la secci\'on \textbf{Setting > Indexes}
-\item Validar que exista el index \textbf{twitter}
-\item Hacer click en \textbf{Setting > Source Types} y validar que existan los source types \textbf{twitter, setting} y \textbf{service}
+\item Make click on top right of Splunk platform, in \textbf{Setting > Indexes} section.
+\item Validate that \textbf{twitter} index exist.
+\item Make click on \textbf{Setting > Source Types} and validate that \textbf{twitter, setting} y \textbf{service} source types exist.
 \newline
 \end{enumerate}
 
@@ -252,19 +250,19 @@ Para la validaci\'on de la instalaci\'on se deben seguir los siguientes pasos:
     \includegraphics[width=\linewidth]{img/e.png}
     \caption{\color{text} Sourcetype}
   \end{subfigure}
-  \caption{\color{text} Validaciones}
+  \caption{\color{text} Validations}
   \label{fig:validacion}
 \end{figure}
 
-\textbf{Index twitter: }Es el repositorio de datos del aplicativo instalado.\\
-\textbf{Source Type twitter: }Identifica la estructura de los datos filtrados de Twitter.\\
-\textbf{Source Type service: }Identifica la estructura de los datos generador por el m\'odulo \textit{service.py}\\
-\textbf{Source Type setting: }Identifica la estructura de los datos generador por los m\'odulos \textit{twitter.py} y \textit{security.py}
+\textbf{Index twitter: }Data repository of installed application.\\
+\textbf{Source Type twitter: }Identify the structure of the filtered data on twitter.\\
+\textbf{Source Type service: }Identify the structure of the generated data by \textit{service.py} module.\\
+\textbf{Source Type setting: }Identify the structure of the generated data by \textit{twitter.py} y \textit{security.py} modules.
 \newline
-\section{Soporte, consultas o comentarios}
+\section{Support, questions and comments}
 
-\textbf{Nombre: }Juan Alejandro P\'erez Chand\'ia\\
+\textbf{Full Name: }Juan Alejandro P\'erez Chand\'ia\\
 \textbf{E-Mail: }jalejandro.ingeniero@gmail.com\\
-\textbf{Idioma: }Espa\~nol - Ingl\'es
+\textbf{Language: }Spanish - English
 % \end{large}
 \end{document}

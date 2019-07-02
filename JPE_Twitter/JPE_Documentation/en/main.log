@@ -1,4 +1,4 @@
-This is LuaTeX, Version 1.0.4 (TeX Live 2017/Debian)  (format=lualatex 2018.11.14)  29 JUN 2019 22:53
+This is LuaTeX, Version 1.0.4 (TeX Live 2017/Debian)  (format=lualatex 2018.11.14)  1 JUL 2019 21:53
  restricted system commands enabled.
 **main.tex
 (./main.tex
@@ -34,7 +34,7 @@ Inserting `luaotfload.aux.set_capheight' at position 3 in `luaotfload.patch_font
 '.
 Inserting `luaotfload.rewrite_fontname' at position 4 in `luaotfload.patch_font'
 .
-luaotfload | main : initialization completed in 0.077 seconds
+luaotfload | main : initialization completed in 0.078 seconds
 Babel <3.18> and hyphenation patterns for 1 language(s) loaded.
 (/usr/share/texlive/texmf-dist/tex/latex/base/article.cls
 Document Class: article 2014/09/29 v1.4h Standard LaTeX document class
@@ -1580,23 +1580,23 @@ no10-regular.luc) [5<./img/token.png>]
 <img/filter.png, id=108, 1890.06125pt x 954.56625pt>
 File: img/filter.png Graphic file (type png)
 <use img/filter.png>
-Package luatex.def Info: img/filter.png  used on input line 147.
+Package luatex.def Info: img/filter.png  used on input line 148.
 (luatex.def)             Requested size: 378.00555pt x 190.90987pt.
 <img/service.png, id=109, 1890.06125pt x 954.56625pt>
 File: img/service.png Graphic file (type png)
 <use img/service.png>
-Package luatex.def Info: img/service.png  used on input line 157.
+Package luatex.def Info: img/service.png  used on input line 158.
 (luatex.def)             Requested size: 378.00555pt x 190.90987pt.
 <img/user.png, id=110, 1878.01625pt x 965.6075pt>
 File: img/user.png Graphic file (type png)
 <use img/user.png>
-Package luatex.def Info: img/user.png  used on input line 168.
+Package luatex.def Info: img/user.png  used on input line 169.
 (luatex.def)             Requested size: 375.5966pt x 193.11807pt.
  [6<./img/filter.png><./img/service.png>]
 <img/hashtag.png, id=119, 1878.01625pt x 965.6075pt>
 File: img/hashtag.png Graphic file (type png)
 <use img/hashtag.png>
-Package luatex.def Info: img/hashtag.png  used on input line 178.
+Package luatex.def Info: img/hashtag.png  used on input line 179.
 (luatex.def)             Requested size: 375.5966pt x 193.11807pt.
  [7<./img/user.png><./img/hashtag.png>]
 <img/comments.png, id=128, 1878.01625pt x 1224.575pt>
@@ -1605,78 +1605,84 @@ File: img/comments.png Graphic file (type png)
 Package luatex.def Info: img/comments.png  used on input line 190.
 (luatex.def)             Requested size: 375.5966pt x 244.91066pt.
  [8<./img/comments.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 198--202
+Underfull \hbox (badness 10000) in paragraph at lines 197--201
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 198--202
+Underfull \hbox (badness 10000) in paragraph at lines 197--201
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 205--207
+Underfull \hbox (badness 10000) in paragraph at lines 204--206
 
  []
 
 <img/a.png, id=135, 1648.1575pt x 882.29625pt>
 File: img/a.png Graphic file (type png)
 <use img/a.png>
-Package luatex.def Info: img/a.png  used on input line 212.
+Package luatex.def Info: img/a.png  used on input line 211.
 (luatex.def)             Requested size: 210.70462pt x 112.79082pt.
 <img/b.png, id=136, 1648.1575pt x 882.29625pt>
 File: img/b.png Graphic file (type png)
 <use img/b.png>
-Package luatex.def Info: img/b.png  used on input line 216.
+Package luatex.def Info: img/b.png  used on input line 215.
 (luatex.def)             Requested size: 210.70462pt x 112.79082pt.
 <img/c.png, id=137, 1648.1575pt x 882.29625pt>
 File: img/c.png Graphic file (type png)
 <use img/c.png>
-Package luatex.def Info: img/c.png  used on input line 220.
+Package luatex.def Info: img/c.png  used on input line 219.
 (luatex.def)             Requested size: 210.70462pt x 112.79082pt.
 [9<./img/a.png><./img/b.png><./img/c.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 231--233
+Underfull \hbox (badness 10000) in paragraph at lines 229--231
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 237--239
+Underfull \hbox (badness 10000) in paragraph at lines 235--237
 
  []
 
 <img/f.png, id=149, 2223.30624pt x 1158.3275pt>
 File: img/f.png Graphic file (type png)
 <use img/f.png>
-Package luatex.def Info: img/f.png  used on input line 244.
+Package luatex.def Info: img/f.png  used on input line 242.
 (luatex.def)             Requested size: 210.70462pt x 109.75946pt.
 <img/d.png, id=150, 2223.30624pt x 1158.3275pt>
 File: img/d.png Graphic file (type png)
 <use img/d.png>
-Package luatex.def Info: img/d.png  used on input line 248.
+Package luatex.def Info: img/d.png  used on input line 246.
 (luatex.def)             Requested size: 210.70462pt x 109.75946pt.
 <img/e.png, id=151, 2223.30624pt x 1158.3275pt>
 File: img/e.png Graphic file (type png)
 <use img/e.png>
-Package luatex.def Info: img/e.png  used on input line 252.
+Package luatex.def Info: img/e.png  used on input line 250.
 (luatex.def)             Requested size: 210.70462pt x 109.75946pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 259--264
+Underfull \hbox (badness 10000) in paragraph at lines 257--262
 
  []
 
 [10<./img/f.png><./img/d.png><./img/e.png>]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 270.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 270.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 268.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 268.
  (./main.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 270.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 270.
-Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 3C1B17793A0A43EEF90AE950D0A80C67;765.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 268.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 268.
 
+
+Package rerunfilecheck Warning: File `main.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `main.out':
+(rerunfilecheck)             Before: 2F7A8B0F265D7A977ABFA3C30A1A2056;759
+(rerunfilecheck)             After:  0323855F1B7A08D97139BA293ABB4FDB;760.
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 270.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 268.
 )
 
 Here is how much of LuaTeX's memory you used:
@@ -1687,8 +1693,8 @@ Here is how much of LuaTeX's memory you used:
 bute_list, 1 write, 1 pdf_action nodes
    avail lists: 2:405,3:114,4:50,5:167,6:1680,7:464,8:39,9:120,10:14,11:190
  33063 multiletter control sequences out of 65536+600000
- 59 fonts using 13462979 bytes
- 57i,11n,67p,505b,554s stack positions out of 5000i,500n,10000p,200000b,100000s
+ 59 fonts using 13462923 bytes
+ 57i,11n,67p,493b,554s stack positions out of 5000i,500n,10000p,200000b,100000s
 </usr/share/texmf/fonts/opentype/public/lm/lmmono10-regular.otf></usr/share/texl
 ive/texmf-dist/fonts/opentype/public/libertine/LinLibertine_RBI.otf></usr/share/
 texlive/texmf-dist/fonts/opentype/public/libertine/LinLibertine_RI.otf></usr/sha
@@ -1696,7 +1702,7 @@ re/texlive/texmf-dist/fonts/opentype/public/libertine/LinLibertine_RB.otf></usr/
 share/texlive/texmf-dist/fonts/opentype/public/libertine/LinLibertine_R.otf>{/us
 r/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texlive/texmf
 -dist/fonts/type1/urw/palatino/uplr8a.pfb>
-Output written on main.pdf (10 pages, 969404 bytes).
+Output written on main.pdf (10 pages, 968915 bytes).
 
 PDF statistics: 205 PDF objects out of 1000 (max. 8388607)
  147 compressed objects within 2 object streams
