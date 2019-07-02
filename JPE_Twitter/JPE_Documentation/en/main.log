@@ -1,4 +1,4 @@
-This is LuaTeX, Version 1.0.4 (TeX Live 2017/Debian)  (format=lualatex 2018.11.14)  1 JUL 2019 21:53
+This is LuaTeX, Version 1.0.4 (TeX Live 2017/Debian)  (format=lualatex 2018.11.14)  1 JUL 2019 21:57
  restricted system commands enabled.
 **main.tex
 (./main.tex
@@ -34,7 +34,7 @@ Inserting `luaotfload.aux.set_capheight' at position 3 in `luaotfload.patch_font
 '.
 Inserting `luaotfload.rewrite_fontname' at position 4 in `luaotfload.patch_font'
 .
-luaotfload | main : initialization completed in 0.078 seconds
+luaotfload | main : initialization completed in 0.077 seconds
 Babel <3.18> and hyphenation patterns for 1 language(s) loaded.
 (/usr/share/texlive/texmf-dist/tex/latex/base/article.cls
 Document Class: article 2014/09/29 v1.4h Standard LaTeX document class
@@ -1670,17 +1670,14 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 268.
  (./main.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 268.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 268.
+Package rerunfilecheck Info: File `main.out' has not changed.
+(rerunfilecheck)             Checksum: 0323855F1B7A08D97139BA293ABB4FDB;760.
 
-
-Package rerunfilecheck Warning: File `main.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `main.out':
-(rerunfilecheck)             Before: 2F7A8B0F265D7A977ABFA3C30A1A2056;759
-(rerunfilecheck)             After:  0323855F1B7A08D97139BA293ABB4FDB;760.
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 268.
 )
@@ -1702,7 +1699,7 @@ re/texlive/texmf-dist/fonts/opentype/public/libertine/LinLibertine_RB.otf></usr/
 share/texlive/texmf-dist/fonts/opentype/public/libertine/LinLibertine_R.otf>{/us
 r/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texlive/texmf
 -dist/fonts/type1/urw/palatino/uplr8a.pfb>
-Output written on main.pdf (10 pages, 968915 bytes).
+Output written on main.pdf (10 pages, 968875 bytes).
 
 PDF statistics: 205 PDF objects out of 1000 (max. 8388607)
  147 compressed objects within 2 object streams
