@@ -8,6 +8,6 @@
 \contentsline {subsubsection}{\numberline {2.1.4}Twitter Users}{7}{subsubsection.2.1.4}
 \contentsline {subsubsection}{\numberline {2.1.5}Twitter Hashtag}{7}{subsubsection.2.1.5}
 \contentsline {subsubsection}{\numberline {2.1.6}Twitter Comments}{8}{subsubsection.2.1.6}
-\contentsline {section}{\numberline {3}Instalation}{9}{section.3}
+\contentsline {section}{\numberline {3}Installation}{9}{section.3}
 \contentsline {section}{\numberline {4}Validations}{10}{section.4}
 \contentsline {section}{\numberline {5}Support, questions and comments}{10}{section.5}

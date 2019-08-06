@@ -13,7 +13,7 @@
 \title{JPE\_Twitter} % tittel
 \newcommand{\subtitle}{Splunk App for Twitter Mining} % undertittel
 %\newcommand{\sammendrag}{Sammendrag legges inn her. \lipsum*[2]} % sammendrag
-\newcommand{\sammendrag}{\justify This document was made, designed and wrote uniquely to general understand of JPE\_Twitter application, so it can't be edited and distribute whitout the written authorization of the author.}
+\newcommand{\sammendrag}{\justify This document was wrote, designed and made uniquely to the general understanding of JPE\_Twitter application, so it can't be edited and distribute whitout the written authorization of the author.}
 \newcommand{\notatnummer}{May 2019} % dato for rapport (erstatter notatnummer)
 
 \author{%
@@ -63,7 +63,8 @@
 % \begin{large}
 
 \section{Introduction}
-JPE\_Twitter is a Splunk Application developed in Python, whose purpose is the Twitter Mining and complete integration with the log analysis tool previously mentioned. With JPE\_Twitter you'll can extract of Twitter important information based on words filter, phrases, hashtag, among other and get data indicate what's happening with our business or service on Twitter, building a development base to sentiment analysis on Twitter.
+JPE\_Twitter is a Splunk Application developed in Python, whose purpose is the Twitter Mining and complete integration with the log analysis tool previously mentioned. With JPE\_Twitter you can extract of Twitter important information based on words filter,
+phrases, hashtag, among others and get data, that indicate what’s happening with our business or service on Twitter, building a development base to sentiment analysis on Twitter.
 \newpage
 \tableofcontents
 \thispagestyle{empty}
@@ -71,14 +72,14 @@ JPE\_Twitter is a Splunk Application developed in Python, whose purpose is the T
 \newpage
 \section{Basic concepts of development}
 
-The application is developed in Python 2.7, with the purpose of sharing the Python base installation of the Splunk platform (6.x or higher) and has five essential modules:
+The application is developed in Python 2.7, with the purpose of sharing Python base installation of the Splunk platform (6.x or higher) and has five essential modules:
 \newline
 \begin{itemize}
 \item {\bf config :} The application has a configuration file called \textit{twitter.conf}, where config module can read and write the necessary parameter to the authentication with Twitter API, log files configuration, encrypt, among others.
 
 \item {\bf security :} For the security of confidential data (authentication token), this module has what it needs to encrypt and decrypt, based on the key that the user defines in the configuration of the tokens in Splunk.
 
-\item {\bf splunk\_read :} The purpose of this modules is take all parameters entered from the Splunk platform and take them to the corresponding module (config, security, service, among others).
+\item {\bf splunk\_read :} The purpose of this modules is take all the entered parameters from the Splunk platform and take them to the corresponding module (config, security, service, among others).
 
 \item {\bf service :} Responsible to start, stop and restart the service, besides to obtain its status.
 
@@ -86,16 +87,17 @@ The application is developed in Python 2.7, with the purpose of sharing the Pyth
 \newline
 \end{itemize}
 
-Besides, JPE\_Twitter has its own log files, [for | to] make process debug through Splunk or directly looking at log files: 
+Besides, JPE\_Twitter has its own log files, to make process debug through Splunk or directly looking at log files: 
 \newline
 \begin{itemize}
-\item {\bf config.log :} Show the ran process by \textit{config} module, including its problem (if there are any).
+\item {\bf config.log :} Show the ran process by \textit{config} module, including its problem (if there is
+any).
 
-\item {\bf service.log :} Show the service state and its PID, besides include problems that this service could have.
+\item {\bf service.log :} Show the service state and its PID, besides include problems that this service might have.
 
 \item {\bf twitter.log :} Show the authentication state with Twitter API and filtered messages from this social network.
 
-\item {\bf splunk\_read.log :} Show the ran process by \textit{splunk\_read} module, including its problem (if there are any).
+\item {\bf splunk\_read.log :} Show the ran process by \textit{splunk\_read} module, including its problem (if there is any).
 \newline
 \end{itemize}
 
@@ -105,11 +107,11 @@ Besides, JPE\_Twitter has its own log files, [for | to] make process debug throu
 	\caption{\color{text}JPE\_Twitter General Diagram}
 \end{figure}
 
-\textit{\small \textbf{Important:} All necessary libraries to proper running of aplication, is includes on the installation package.}
+\textit{\small \textbf{Important:} All the necessary libraries to  the proper running of the application, are included on the installation package.}
 \newpage
 \subsection{Dashboards}
 
-For administration of Twitter listener process it exists three important dashboard, that allow configure the authentication tokens and filters, besides allow start, stop and restart service or verificate its status:
+To the administration of Twitter listening process exists three important dashboards, that allows to configure the authentication tokens and filters, also allows to start, stop and restart  the service or check its status: 
 \newline
 \begin{itemize}
 \item Token and Security
@@ -118,7 +120,7 @@ For administration of Twitter listener process it exists three important dashboa
 \newline
 \end{itemize}
 
-And also have with three basic dashboard, that allow show Twitter general information base on the filters configurated, such as user with most followers, hashtag the most used and users mention:
+Besides, have three basic dashboards, that allows to show Twitter general information base on the filters configurated, such as user with most followers, hashtag the most used and users mention: 
 \newline
 \begin{itemize}
 \item Twitter Users
@@ -128,8 +130,7 @@ And also have with three basic dashboard, that allow show Twitter general inform
 \end{itemize}
 
 \subsubsection{Token and Security}
-
-This dashboard allow to configure the authentication tokens of Twitter API, which are: \textit{consumer key, consumer secret, access token and access secret}. This tokens are stored in configuration file \textit{twitter.conf} and security concern, the authentication tokens can be encrypted to prevent that other people access to them, only is necessary to write an encryption key in the same panel, after to indicate that you want to encrypt the tokens.
+This dashboard allows to configure the authentication of Twitter API tokens, which are: \textit{consumer key, consumer secret, access token and access secret}. This tokens are stored in the configuration file \textit{twitter.conf} and related to security, the authentication tokens can be encrypted to prevent that other people access to them, only  is necessary to write an encryption key in the same panel, after to indicate that you want to encrypt the tokens. 
 \newline
 \begin{figure}[h!]
 	\centering
@@ -137,11 +138,12 @@ This dashboard allow to configure the authentication tokens of Twitter API, whic
 	\caption{\color{text}Setting: Token and Security Dashboard}
 \end{figure}
 \newline
-It is important consider that: to obtein tokens, it must create a developer account on Twitter (\url{https://developer.twitter.com})
+It is important to consider that: to obtain tokens, you must create a developer account on Twitter (\url{https://developer.twitter.com})
 \newpage
 \subsubsection{Filter}
 
-This dashboard allow to configure filters that will be apply in listener Twitter process. Configuration option include adding new filter to the already configured or create new filter, replacing the previous ones, by choosing \textit{add o new} respectively. \\Entered filters can be words, phrases, hashtag, among others and should be separate by comma.
+This dashboard allows to configure filters that will be apply in the listening process. Configuration option included adding a new filter to what is already configured or create a new filter, replacing the previous ones, by choosing \textit{add o new} respectively.\\
+Entered filters can be words, phrases, hashtag, among others and should be separated by comma. 
 \newline
 \begin{figure}[h!]
 	\centering
@@ -150,8 +152,7 @@ This dashboard allow to configure filters that will be apply in listener Twitter
 \end{figure}
 
 \subsubsection{Service}
-
-This dashboard allows action run over Twitter service. Start option allows initiate to service and begin indexing data obtained from Twitter and as previous requisite, is required do you have authentication tokens and filters configurated. Stop option is responsible to stop it service. Restart option allows automatically stop and start service if is require by own development or others reason. Status option shows service information (active or stopped).
+This dashboard allows  the action of run over Twitter service. Start option allows to initiate the service and begin to index the data obtained from Twitter and as previous requirement, you will need to have an authentication tokens and filters configurated. Stop option is responsible to stop the service. Restart option allows automatically to stop and start the service if it is require for own developments or other reasons. Status option shows service information (active or stopped).
 \newline
 \begin{figure}[h!]
 	\centering
@@ -193,10 +194,11 @@ This dashboard shows the details of the most commented users, comments made and 
 
 \newpage
 
-\section{Instalation}
-JPE\_Twitter was tested in Splunk 6.x versions or higher and was development on Splunk 7, which will be used in the following intalation guide.\\
+\section{Installation}
+ 
+JPE\_Twitter was tested in Splunk 6.x versions or higher and was development on Splunk 7, which will be used in the following installation guide.\\
 \\
-Considering that application is downloaded, you must follow the next steps:
+Considering that the application is downloaded, you must follow the next steps:
 \newline
 \begin{enumerate}[label=(\alph*)]
 \item Make click on top left of the Splunk platform, says \textbf{App: Search \& Reporting} > \textbf{Manage Apps}
@@ -219,14 +221,14 @@ Considering that application is downloaded, you must follow the next steps:
     \includegraphics[width=\linewidth]{img/c.png}
     \caption{\color{text} Upload}
   \end{subfigure}
-  \caption{\color{text}JPE\_Twitter Intalation}
+  \caption{\color{text}JPE\_Twitter Installation}
   \label{fig:instalacion}
 \end{figure}
 With these simple steps, JPE\_Twitter will be installed. The recomendation is to restart Splunk.
 \newpage
 \section{Validations}
 
-For the validation of installation, you must follow the next steps:
+In order to validate the installation, you must follow the next steps:
 \newline
 
 \begin{enumerate}[label=(\alph*)]
@@ -263,6 +265,6 @@ For the validation of installation, you must follow the next steps:
 
 \textbf{Full Name: }Juan Alejandro P\'erez Chand\'ia\\
 \textbf{E-Mail: }jalejandro.ingeniero@gmail.com\\
-\textbf{Language: }Spanish - English
+\textbf{Languages: }Spanish - English
 % \end{large}
 \end{document}
