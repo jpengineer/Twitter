@@ -1,9 +1,10 @@
 # -*- coding: utf-8 -*-
+
 # //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 #                                                                                                                     //
 #   Author: Juan Alejandro Perez Chadia                                                                               //
-#   Date: 01-Sep-2018                                                                                                 //
-#   Version: V1.0.A                                                                                                     //
+#   Date: July 25th, 2019                                                                                             //
+#   Personal brand: JPEngineer                                                                                        //
 #                                                                                                                     //
 # //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
@@ -21,19 +22,16 @@ from tweepy import Stream
 _PACKAGE_ = os.getcwd() + '/packages'
 sys.path.append(_PACKAGE_)
 
-_version_ = '1.0.A'
+_version_ = '1.0.C'
 _author_ = 'Juan Alejandro Perez Chandia'
 _brand_ = 'JPEngineer'
-_type_ = 'Developing'
+_type_ = 'LTS'
 
 
 class Listener(StreamListener):
     def on_data(self, data):
         try:
             data = data.replace('\n', '')
-            # log.info(data)
-            # return data
-            # print(data.replace('\n', ''))
             log.info(data.replace('\n', ''))
         except Exception as error:
             log.error(error)
@@ -81,8 +79,6 @@ if conf.load_config():
     try:
         listener = StreamListener()
         listener = Stream(auth, Listener(), tweet_mode='extended')
-        listener.filter(track=[conf.filter], languages=["es"])
-        #   splunk_socket.send(listener.filter(track=[file['FILTER']], languages=["es"]))
-        #   splunk_socket.close()
+        listener.filter(track=[conf.filter])
     except Exception as err:
         log.error("The access token must be updated: " + str(err))

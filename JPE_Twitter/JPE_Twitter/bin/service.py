@@ -1,21 +1,22 @@
 # -*- coding: utf-8 -*-
-#///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-#                                                                                                                     //
-#   Author: Juan Alejandro Perez Chandia                                                                               //
-#   Date: 01-Sep-2018                                                                                                 //
-#   Version: V1.0.A                                                                                                     //
-#///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
+# //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+#                                                                                                                     //
+#   Author: Juan Alejandro Perez Chadia                                                                               //
+#   Date: July 25th, 2019                                                                                             //
+#   Personal brand: JPEngineer                                                                                        //
+#                                                                                                                     //
+# //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 import os
 import sys
 import config
 import splunk.Intersplunk
 
-_version_ = '1.0.A'
+_version_ = '1.0.C'
 _author_ = 'Juan Alejandro Perez Chandia'
 _brand_ = 'JPEngineer'
-_type_ = 'Developing'
+_type_ = 'LTS'
 
 
 def start_service(python, process_name):
