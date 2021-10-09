@@ -2,7 +2,7 @@
 
 # //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 #                                                                                                                     //
-#   Author: Juan Alejandro Perez Chadia                                                                               //
+#   Author: Juan Alejandro Perez Chandia                                                                               //
 #   Date: July 25th, 2019                                                                                             //
 #   Personal brand: JPEngineer                                                                                        //
 #                                                                                                                     //

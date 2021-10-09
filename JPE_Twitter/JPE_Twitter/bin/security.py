@@ -13,14 +13,14 @@ import sys
 import base64
 import hashlib
 
-_PACKAGE_ = os.getcwd() + '/packages'
-sys.path.append(_PACKAGE_)
+# _PACKAGE_ = os.getcwd() + '/packages'
+# sys.path.append(_PACKAGE_)
 
 
 class AESCipher(object):
 
     def __init__(self, key):
-        sys.path.append(_PACKAGE_)
+        # sys.path.append(_PACKAGE_)
         global AES
         global Random
         from Crypto.Cipher import AES
@@ -37,7 +37,7 @@ class AESCipher(object):
         iv = Random.new().read(AES.block_size)
         # iv = "Tn/wvw0X7CmW7Q=="
         cipher = AES.new(self.key, AES.MODE_CBC, iv)
-        return base64.b64encode(iv + cipher.encrypt(raw))
+        return base64.b64encode(iv + cipher.encrypt(raw)).decode('utf-8')
 
     def decrypt(self, enc):
         enc = base64.b64decode(enc)
@@ -83,7 +83,7 @@ class VerifyConfig(object):
             try:
                 self.security = AESCipher(self.internal_key)
                 a = self.security.decrypt(key)
-                print a
+                print(a)
                 if self.magic_word in self.security.decrypt(key.encode()):
                     return key
                 else:

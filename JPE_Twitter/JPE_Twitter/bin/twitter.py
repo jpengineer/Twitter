@@ -2,7 +2,7 @@
 
 # //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 #                                                                                                                     //
-#   Author: Juan Alejandro Perez Chadia                                                                               //
+#   Author: Juan Alejandro Perez Chandia                                                                              //
 #   Date: July 25th, 2019                                                                                             //
 #   Personal brand: JPEngineer                                                                                        //
 #                                                                                                                     //
@@ -12,38 +12,41 @@ import os
 import sys
 import config
 import security
+import tweepy
 from tweepy import OAuthHandler
 from tweepy import API
 from tweepy import parsers
-from tweepy import StreamListener
 from tweepy import Stream
+# from tweepy.streaming import StreamListener
 
+# _PACKAGE_ = os.getcwd() + '/packages'
+# sys.path.append(_PACKAGE_)
 
-_PACKAGE_ = os.getcwd() + '/packages'
-sys.path.append(_PACKAGE_)
-
-_version_ = '1.0.C'
+_version_ = '2.0.0'
 _author_ = 'Juan Alejandro Perez Chandia'
 _brand_ = 'JPEngineer'
-_type_ = 'LTS'
+_type_ = 'BETA'
 
-
-class Listener(StreamListener):
+class Listener(tweepy.streaming.Stream):
     def on_data(self, data):
         try:
             data = data.replace('\n', '')
             log.info(data.replace('\n', ''))
-        except Exception as error:
-            log.error(error)
+        except Exception as e:
+            log.error(e)
 
 
 def authentication(cipher, consumer_key, consumer_secret, access_token, access_secret):
     try:
         # TODO remove - only testing
-        # print "CONSUMER_KEY: ", cipher.decrypt(consumer_key).encode('utf-8')
-        # print "CONSUMER_SECRET: ", cipher.decrypt(consumer_secret).encode('utf-8')
-        # print "ACCESS_TOKEN: ", cipher.decrypt(access_token).encode('utf-8')
-        # print "ACCESS_SECRET: ", cipher.decrypt(access_secret).encode('utf-8')
+        print("CONSUMER_KEY: ", cipher.decrypt(consumer_key).encode('utf-8'))
+        print("CONSUMER_SECRET: ", cipher.decrypt(consumer_secret).encode('utf-8'))
+        print("ACCESS_TOKEN: ", cipher.decrypt(access_token).encode('utf-8'))
+        print("ACCESS_SECRET: ", cipher.decrypt(access_secret).encode('utf-8'))
+        # print("CONSUMER_KEY: ", cipher.decrypt(consumer_key).encode('utf-8'))
+        # print("CONSUMER_SECRET: ", cipher.decrypt(consumer_secret).encode('utf-8'))
+        # print("ACCESS_TOKEN: ", cipher.decrypt(access_token).encode('utf-8'))
+        # print("ACCESS_SECRET: ", cipher.decrypt(access_secret).encode('utf-8'))
 
         # Authentication with Twiteer API
         authenticate = OAuthHandler(cipher.decrypt(consumer_key).encode('utf-8'),
@@ -53,9 +56,9 @@ def authentication(cipher, consumer_key, consumer_secret, access_token, access_s
         twitter_api = API(authenticate, parser=parsers.JSONParser())
         return twitter_api, authenticate
 
-    except Exception as error:
+    except Exception as e:
         log.error("There was an error trying to connect with twitter.")
-        log.error(error.args)
+        log.error(e.args)
         exit(0)
 
 
@@ -77,7 +80,7 @@ if conf.load_config():
         print(error)
 
     try:
-        listener = StreamListener()
+        # listener = StreamListener()
         listener = Stream(auth, Listener(), tweet_mode='extended')
         listener.filter(track=[conf.filter])
     except Exception as err:
