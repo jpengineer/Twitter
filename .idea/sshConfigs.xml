@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="SshConfigs">
+    <configs>
+      <sshConfig authType="PASSWORD" host="192.168.1.174" id="dda766f8-de09-48c8-98d0-aa0ed147b8f6" port="22" customName="JPE_Twitter" nameFormat="CUSTOM" username="root">
+        <option name="customName" value="JPE_Twitter" />
+      </sshConfig>
+    </configs>
+  </component>
+</project>
